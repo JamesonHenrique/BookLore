@@ -34,7 +34,7 @@ public class User implements UserDetails, Principal {
     private Long id;
     private String firstName;
     private String lastName;
-    private LocalDate dataofBirth;
+    private LocalDate dateofBirth;
     @Column(unique = true)
     private String email;
     private String password;
