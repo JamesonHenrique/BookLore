@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/booklore
-    username: root
-    password: postgres
+    username: postgres
+    password: root
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

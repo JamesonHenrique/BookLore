@@ -1,8 +1,6 @@
 package com.jhcs.booklore.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -14,12 +12,14 @@ import java.time.LocalDateTime;
 @Entity
 @Builder
 public class Token {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String token;
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;
     private LocalDateTime validateAt;
     @ManyToOne
-    @Column(name = "userId", nullable = false)
+    @JoinColumn(name = "userId", nullable = false)
     private User user;
 }

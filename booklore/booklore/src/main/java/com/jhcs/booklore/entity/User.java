@@ -2,10 +2,7 @@ package com.jhcs.booklore.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -25,8 +22,9 @@ import java.util.stream.Collectors;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @EntityListeners(AuditingEntityListener.class)
 public class User implements UserDetails, Principal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,7 +32,7 @@ public class User implements UserDetails, Principal {
     private Long id;
     private String firstName;
     private String lastName;
-    private LocalDate dateofBirth;
+    private LocalDate dateOfBirth;
     @Column(unique = true)
     private String email;
     private String password;
