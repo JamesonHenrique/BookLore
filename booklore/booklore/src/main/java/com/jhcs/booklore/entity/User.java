@@ -1,6 +1,7 @@
 package com.jhcs.booklore.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.jhcs.booklore.history.BookTransactionHistory;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -39,9 +40,6 @@ public class User implements UserDetails,
     private String password;
     private boolean accountLocked;
     private boolean enabled;
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Role> roles;
     @CreatedDate
     @Column(updatable = false, nullable = false)
     private LocalDateTime createdDate;
@@ -49,7 +47,13 @@ public class User implements UserDetails,
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
 
-
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Role> roles;
+    @OneToMany(mappedBy = "owner")
+    private List<Book> books;
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
     public String fullName() {
         return firstName + " " + lastName;
     }
