@@ -24,14 +24,15 @@ public class EmailService {
     @Async
     public void sendEmail(
             String to,
-            String username,
+            String fullname,
+            EmailTemplateName emailTemplate,
             String confirmationUrl,
             String activationCode,
-            String subject,
-            EmailTemplateName emailTemplate)
+            String subject
+           )
             throws
             MessagingException {
-        String templateName = emailTemplate == null ? "confirm-email" : emailTemplate.name();
+        String templateName = emailTemplate == null ? "confirm-email" : emailTemplate.getName();
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(
                 mimeMessage,
@@ -39,7 +40,7 @@ public class EmailService {
                 UTF_8.name()
                                                           );
         Map<String, Object> properties = new HashMap<>();
-        properties.put("username", username);
+        properties.put("username", fullname);
         properties.put("confirmationUrl", confirmationUrl);
         properties.put("activation_code", activationCode);
         Context context = new Context();

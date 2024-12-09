@@ -1,0 +1,3184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1733683749694" />
+          <option name="id" value="8400149c-64d5-4c7f-a4d9-b0225b100eb3" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;b@example.com&quot;,&#10;    &quot;password&quot;: &quot;b&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKaVFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16Tmpnek56UTVMQ0psZUhBaU9qRTNNek0yT0RVeE9Ea3NJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLkdLM0NwTjdhT3lTNktoN1JKdi0tekFOdmVCUHVLcHNERDltazdMYVpoNEpqY2VuT3BHeHJaTFJxaFdxcXBDNnZNY2RvYVBHb0VHRzc5WERGTkVzbXVBIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJiQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjgzNzQ5LCJleHAiOjE3MzM2ODUxODksImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.GK3CpN7aOyS6Kh7RJv--zANveBPuKpsDD9mk7LaZh4JjcenOpGxrZLRqhWqqpC6vMcdoaPGoEGG79XDFNEsmuA&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 18:49:09 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8400149c-64d5-4c7f-a4d9-b0225b100eb3" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJiQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjgzNzQ5LCJleHAiOjE3MzM2ODUxODksImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.GK3CpN7aOyS6Kh7RJv--zANveBPuKpsDD9mk7LaZh4JjcenOpGxrZLRqhWqqpC6vMcdoaPGoEGG79XDFNEsmuA&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="1920" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733684020719" />
+          <option name="id" value="619ca169-c0ed-4c2b-a57b-c530f7d90ce6" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;c@example.com&quot;,&#10;    &quot;password&quot;: &quot;c&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKalFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnME1ESXdMQ0psZUhBaU9qRTNNek0yT0RVME5qQXNJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLnpoSGpkNzZtUEdSYVhxSl83YWFnRjFFNnp6UVk3T3h0UENncUs0VmNLdTNtUHUzU1JJa1pNbC1SREpzTWFUMklsTGEzZUJJQlpLai1McG5fblBDVTh3In0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJjQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0MDIwLCJleHAiOjE3MzM2ODU0NjAsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.zhHjd76mPGRaXqJ_7aagF1E6zzQY7OxtPCgqK4VcKu3mPu3SRIkZMl-RDJsMaT2IlLa3eBIBZKj-Lpn_nPCU8w&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 18:53:40 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="619ca169-c0ed-4c2b-a57b-c530f7d90ce6" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJjQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0MDIwLCJleHAiOjE3MzM2ODU0NjAsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.zhHjd76mPGRaXqJ_7aagF1E6zzQY7OxtPCgqK4VcKu3mPu3SRIkZMl-RDJsMaT2IlLa3eBIBZKj-Lpn_nPCU8w&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="436" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733684238282" />
+          <option name="id" value="1cf664f5-a127-45a4-a9d9-f59c394c5933" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;d@example.com&quot;,&#10;    &quot;password&quot;: &quot;d&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKa1FHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnME1qTTRMQ0psZUhBaU9qRTNNek0yT0RVMk56Z3NJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLlRoTnpJcHEwWjRCMnlVQjZoV0ZGTW5YenB3eklLSVEwTlh1X1RVSWxJMmstaE9xYzRWc0hNd1dPeUFzcG9DNlQ3b2hqbFdLaWZFcE9SMVp3WEZKZlVnIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJkQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0MjM4LCJleHAiOjE3MzM2ODU2NzgsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.ThNzIpq0Z4B2yUB6hWFFMnXzpwzIKIQ0NXu_TUIlI2k-hOqc4VsHMwWOyAspoC6T7ohjlWKifEpOR1ZwXFJfUg&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 18:57:18 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1cf664f5-a127-45a4-a9d9-f59c394c5933" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJkQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0MjM4LCJleHAiOjE3MzM2ODU2NzgsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.ThNzIpq0Z4B2yUB6hWFFMnXzpwzIKIQ0NXu_TUIlI2k-hOqc4VsHMwWOyAspoC6T7ohjlWKifEpOR1ZwXFJfUg&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="450" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733684645847" />
+          <option name="id" value="f16004e5-0ff4-4a42-9ec8-c713200bee7e" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;e@example.com&quot;,&#10;    &quot;password&quot;: &quot;e&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKbFFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnME5qUTFMQ0psZUhBaU9qRTNNek0yT0RZd09EVXNJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLmFlZERocEl0SVhNZ2ZlcUJteWx5UjJPTXdOaUl5U3JtYTNCZ2k4eDFsNGc3SG5zblV5SUdVWXBQN043NXZNU09NZWt0dGs3RzBSem9WWHppTDlfYVJBIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJlQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0NjQ1LCJleHAiOjE3MzM2ODYwODUsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.aedDhpItIXMgfeqBmylyR2OMwNiIySrma3Bgi8x1l4g7HnsnUyIGUYpP7N75vMSOMekttk7G0RzoVXziL9_aRA&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:04:05 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f16004e5-0ff4-4a42-9ec8-c713200bee7e" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJlQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0NjQ1LCJleHAiOjE3MzM2ODYwODUsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.aedDhpItIXMgfeqBmylyR2OMwNiIySrma3Bgi8x1l4g7HnsnUyIGUYpP7N75vMSOMekttk7G0RzoVXziL9_aRA&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="415" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733684653196" />
+          <option name="id" value="a5a4674d-5a6e-42e6-afd8-dd7b1c226fb8" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;e@example.com&quot;,&#10;    &quot;password&quot;: &quot;e&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:04:13 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a5a4674d-5a6e-42e6-afd8-dd7b1c226fb8" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="830" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733684946664" />
+          <option name="id" value="74b1a6c1-d051-42e6-8c93-7115435dd964" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;f@example.com&quot;,&#10;    &quot;password&quot;: &quot;f&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKbVFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnME9UUTJMQ0psZUhBaU9qRTNNek0yT0RZek9EWXNJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLmU1NWlQODBOekNxWi1FRkM5TS1QUkU1OXpNbDM5RkJWVUkwcklndTE1VFlONHBIMGtDRmw2VDVMSnNfODdld2hseU8yb0xLX1ZvM29Qal9ZeHNhZkFnIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJmQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0OTQ2LCJleHAiOjE3MzM2ODYzODYsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.e55iP80NzCqZ-EFC9M-PRE59zMl39FBVUI0rIgu15TYN4pH0kCFl6T5LJs_87ewhlyO2oLK_Vo3oPj_YxsafAg&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:09:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="74b1a6c1-d051-42e6-8c93-7115435dd964" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJmQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg0OTQ2LCJleHAiOjE3MzM2ODYzODYsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.e55iP80NzCqZ-EFC9M-PRE59zMl39FBVUI0rIgu15TYN4pH0kCFl6T5LJs_87ewhlyO2oLK_Vo3oPj_YxsafAg&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="720" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733685343857" />
+          <option name="id" value="f13ebad8-4d4d-4c27-a05d-588d845abc75" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;g@example.com&quot;,&#10;    &quot;password&quot;: &quot;g&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKblFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnMU16UXpMQ0psZUhBaU9qRTNNek0yT0RZM09ETXNJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLmRhMFZMSGRmeGFwQ2Y5XzZxZWh4Y2dXQWtObUhyRWgteEZKZ1Fwek5QUHNrNG1rbTJ3WTUxTWR0NHZNSDdYWVFGNkZXT3M3UE02bWI1YnVVZElTSm9RIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJnQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg1MzQzLCJleHAiOjE3MzM2ODY3ODMsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.da0VLHdfxapCf9_6qehxcgWAkNmHrEh-xFJgQpzNPPsk4mkm2wY51Mdt4vMH7XYQF6FWOs7PM6mb5buUdISJoQ&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:15:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f13ebad8-4d4d-4c27-a05d-588d845abc75" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJnQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg1MzQzLCJleHAiOjE3MzM2ODY3ODMsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.da0VLHdfxapCf9_6qehxcgWAkNmHrEh-xFJgQpzNPPsk4mkm2wY51Mdt4vMH7XYQF6FWOs7PM6mb5buUdISJoQ&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="1048" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733685905489" />
+          <option name="id" value="797449e5-c7c3-4a35-8f73-03aadaa33679" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:25:05 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="797449e5-c7c3-4a35-8f73-03aadaa33679" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="136" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733685975617" />
+          <option name="id" value="e80a0248-e307-4e9f-b331-4c4cd71a6914" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:26:15 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e80a0248-e307-4e9f-b331-4c4cd71a6914" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="114" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686123037" />
+          <option name="id" value="f6593b16-178b-496d-b7f0-39489154862e" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="401" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=BC5A40783F88D6FEFEBD20DA4A3985CF; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="WWW-Authenticate" />
+                    <option name="value" value="Basic realm=&quot;Realm&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:28:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f6593b16-178b-496d-b7f0-39489154862e" />
+              <option name="message" value="Unauthorized" />
+              <option name="time" value="132" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686143569" />
+          <option name="id" value="e52bef18-f1b0-431f-a888-5cf12ee79172" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="401" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="WWW-Authenticate" />
+                    <option name="value" value="Basic realm=&quot;Realm&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:29:03 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e52bef18-f1b0-431f-a888-5cf12ee79172" />
+              <option name="message" value="Unauthorized" />
+              <option name="time" value="8" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686197492" />
+          <option name="id" value="320d428b-fc91-4c02-a557-22d6f3241ec3" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="401" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="WWW-Authenticate" />
+                    <option name="value" value="Basic realm=&quot;Realm&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:29:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="320d428b-fc91-4c02-a557-22d6f3241ec3" />
+              <option name="message" value="Unauthorized" />
+              <option name="time" value="116" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686271076" />
+          <option name="id" value="dc7be630-b83d-476d-887e-99d94a36b53f" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="g@example.com" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/?email=g@example.com" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="401" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="WWW-Authenticate" />
+                    <option name="value" value="Basic realm=&quot;Realm&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:31:11 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="dc7be630-b83d-476d-887e-99d94a36b53f" />
+              <option name="message" value="Unauthorized" />
+              <option name="time" value="110" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686417510" />
+          <option name="id" value="1aa7d81b-e2af-45b0-8707-91ac49df7ae2" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;Jameson&quot;,&#10;    &quot;lastName&quot;: &quot;Henrique&quot;,&#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKb1FHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TmpnMk5ERTNMQ0psZUhBaU9qRTNNek0yT0RjNE5UY3NJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLjVKdF9mYTNiUGpuaGg2VjRzdzhiYmJjRTltdkZwa2RkN1NEOGhIRzBlZzZ1aUZkY2FES2R3Zkx0anE3WVdKd20yTkotN21JRzJ3TWxzT25RdjNLYnF3In0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:33:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1aa7d81b-e2af-45b0-8707-91ac49df7ae2" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="583" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686677944" />
+          <option name="id" value="ce841067-a16e-4f19-b5cb-96cf0a8f8ad5" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authentication" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=3F7C00B7C2BA7E76E9116C26F2789DF8; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:37:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ce841067-a16e-4f19-b5cb-96cf0a8f8ad5" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="19" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686678118" />
+          <option name="id" value="44a052ca-c5b5-408c-b02a-f027538a779b" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authentication" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=EE39C40909004879FB8A822E897D84C7; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:37:58 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="44a052ca-c5b5-408c-b02a-f027538a779b" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="17" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686678334" />
+          <option name="id" value="253228b8-249e-4919-b94c-3f9fe5d5e331" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authentication" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=F1C704055CA68F6239516173440A4447; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:37:58 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="253228b8-249e-4919-b94c-3f9fe5d5e331" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="16" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686725136" />
+          <option name="id" value="df3f29bf-01e9-4985-9a7c-29a4ab54d14b" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticatio" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=77351D31E5F45FCC84B4D50E84D118BA; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:38:45 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="df3f29bf-01e9-4985-9a7c-29a4ab54d14b" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="19" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686728861" />
+          <option name="id" value="eb74764c-f45e-4299-8c5a-6ece76e0bbde" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticatio" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=6B1AF2613EA0C8E27C7D70E536BCC26E; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:38:48 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="eb74764c-f45e-4299-8c5a-6ece76e0bbde" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="15" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733686729091" />
+          <option name="id" value="a95aa098-ea2c-4aa8-91d5-2aa69d61f22c" />
+          <option name="request">
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNjg2NDE3LCJleHAiOjE3MzM2ODc4NTcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.5Jt_fa3bPjnhh6V4sw8bbbcE9mvFpkdd7SD8hHG0eg6uiFdcaDKdwfLtjq7YWJwm2NJ-7mIG2wMlsOnQv3Kbqw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;h@example.com&quot;,&#10;    &quot;password&quot;: &quot;h&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticatio" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="JSESSIONID=75E4E133A05A613D03E994C1EF9FE02E; Path=/api/v1; HttpOnly" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:38:49 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a95aa098-ea2c-4aa8-91d5-2aa69d61f22c" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="12" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733687276782" />
+          <option name="id" value="398256be-3cc6-4465-b6db-2e12eb0e067d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;admin&quot;,&#10;    &quot;lastName&quot;: &quot;admin&quot;,&#10;  &quot;email&quot;: &quot;admin@example.com&quot;,&#10;    &quot;password&quot;: &quot;admin&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKaFpHMXBia0JsZUdGdGNHeGxMbU52YlNJc0ltbGhkQ0k2TVRjek16WTROekkzTml3aVpYaHdJam94TnpNek5qZzROekUyTENKaGRYUm9iM0pwZEdsbGN5STZXeUpWVTBWU0lsMTkuNDA4aWlKeFZHemlabERzN0E2azFPSVp0NWJ2dTRJNlljWTRuSTRLVzJZd3Vva1FCaXJnTUFnb3hRZmNOUTRLSGE4ME9KU3lqRGFYbDVEdUpFMlhfYWcifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImlhdCI6MTczMzY4NzI3NiwiZXhwIjoxNzMzNjg4NzE2LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.408iiJxVGziZlDs7A6k1OIZt5bvu4I6YcY4nI4KW2YwuokQBirgMAgoxQfcNQ4KHa80OJSyjDaXl5DuJE2X_ag&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 19:47:56 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="398256be-3cc6-4465-b6db-2e12eb0e067d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImlhdCI6MTczMzY4NzI3NiwiZXhwIjoxNzMzNjg4NzE2LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.408iiJxVGziZlDs7A6k1OIZt5bvu4I6YcY4nI4KW2YwuokQBirgMAgoxQfcNQ4KHa80OJSyjDaXl5DuJE2X_ag&quot;}" />
+              <option name="size" value="232" />
+              <option name="time" value="941" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733688141800" />
+          <option name="id" value="68446555-4392-4671-a8d2-cc410627136e" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;admin&quot;,&#10;    &quot;lastName&quot;: &quot;admin&quot;,&#10;  &quot;email&quot;: &quot;admin@example.com&quot;,&#10;    &quot;password&quot;: &quot;admin&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="431115" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=431115" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Allow" />
+                    <option name="value" value="GET" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 20:02:21 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="68446555-4392-4671-a8d2-cc410627136e" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="337" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733688170367" />
+          <option name="id" value="23dcdb00-a033-4566-9b54-bd1fe227ba76" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="431115" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=431115" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="200" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 20:02:50 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="23dcdb00-a033-4566-9b54-bd1fe227ba76" />
+              <option name="message" value="OK" />
+              <option name="time" value="193" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733688220342" />
+          <option name="id" value="c1763163-adfc-4ef3-b329-60a19ec843c3" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="255213" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=255213" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 20:03:40 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c1763163-adfc-4ef3-b329-60a19ec843c3" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="113" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706641962" />
+          <option name="id" value="ee6489d4-2061-4c8b-8c86-28f5b42e8b91" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="255213" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=255213" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:10:41 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ee6489d4-2061-4c8b-8c86-28f5b42e8b91" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="243" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706675634" />
+          <option name="id" value="1fe22e31-aeef-4db3-833c-406783bd3bd7" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="255213" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=255213" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:11:15 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1fe22e31-aeef-4db3-833c-406783bd3bd7" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="616" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706691789" />
+          <option name="id" value="1e99ed57-b982-46ee-9ccb-96faa4054dd0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="227932" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=227932" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="200" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:11:31 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1e99ed57-b982-46ee-9ccb-96faa4054dd0" />
+              <option name="message" value="OK" />
+              <option name="time" value="578" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706771634" />
+          <option name="id" value="dcbaf896-22fd-44ab-8aad-bad11770f173" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="227932" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=227932" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:12:51 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="dcbaf896-22fd-44ab-8aad-bad11770f173" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="9" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706773107" />
+          <option name="id" value="8a0e3dd7-0729-4ba3-80a2-bbe2ba1a2cf3" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="227932" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=227932" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:12:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8a0e3dd7-0729-4ba3-80a2-bbe2ba1a2cf3" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="9" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706907698" />
+          <option name="id" value="179e37b8-ec1e-464f-a877-86d0ab9d34fe" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;i@example.com&quot;,&#10;    &quot;password&quot;: &quot;i&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ffcf4853-1e81-415d-96b9-3e5cb6a3735a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5SnpkV0lpT2lKcFFHVjRZVzF3YkdVdVkyOXRJaXdpYVdGMElqb3hOek16TnpBMk9UQTNMQ0psZUhBaU9qRTNNek0zTURnek5EY3NJbUYxZEdodmNtbDBhV1Z6SWpwYklsVlRSVklpWFgwLk84eEFneHVZX21HZVpoaUJ1UWxldWNfVlRCeE53M2VFb2F1Z0NCYVB3TC1CUF9ZbFZmMmxIR0ZpUmRkQ1FIc3RFM0IxNHgtRXlmSmFPOWJMZ2tzeE5RIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJpQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzA2OTA3LCJleHAiOjE3MzM3MDgzNDcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.O8xAgxuY_mGeZhiBuQleuc_VTBxNw3eEoaugCBaPwL-BP_YlVf2lHGFiRddCQHstE3B14x-EyfJaO9bLgksxNQ&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:15:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="179e37b8-ec1e-464f-a877-86d0ab9d34fe" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJpQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzNzA2OTA3LCJleHAiOjE3MzM3MDgzNDcsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.O8xAgxuY_mGeZhiBuQleuc_VTBxNw3eEoaugCBaPwL-BP_YlVf2lHGFiRddCQHstE3B14x-EyfJaO9bLgksxNQ&quot;}" />
+              <option name="size" value="227" />
+              <option name="time" value="267" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733706919955" />
+          <option name="id" value="ad37a7a0-c8de-41a5-bf8a-a5673f269866" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c32bb139-577f-46da-b10b-c5329bd23fe4" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="token" />
+                    <option name="value" value="316164" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=316164" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="200" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:15:19 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ad37a7a0-c8de-41a5-bf8a-a5673f269866" />
+              <option name="message" value="OK" />
+              <option name="time" value="363" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733707018854" />
+          <option name="id" value="9819a44a-9db2-458b-b8af-fd5ae537c648" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;i@example.com&quot;,&#10;    &quot;password&quot;: &quot;i&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authentication" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:16:58 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9819a44a-9db2-458b-b8af-fd5ae537c648" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="42" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733707047960" />
+          <option name="id" value="357cade3-758c-49e4-9805-da6227fc5fb9" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;i@example.com&quot;,&#10;    &quot;password&quot;: &quot;i&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticate" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5Sm1kV3hzVG1GdFpTSTZJa3B2YUc0Z1JHOWxJaXdpYzNWaUlqb2lhVUJsZUdGdGNHeGxMbU52YlNJc0ltbGhkQ0k2TVRjek16Y3dOekEwTnl3aVpYaHdJam94TnpNek56QTRORGczTENKaGRYUm9iM0pwZEdsbGN5STZXeUpWVTBWU0lsMTkuZkRwam5yZ3ZsVW5rMnQza3RpczhVRURNRktjdTRySmNGOWwzdFdVeGpVa1JZM01nVVRyM1ZlNlpSV2dEWnRqNjRMUTFUbVAzc2p4QnhiNGtLS3k4bkEifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoiaUBleGFtcGxlLmNvbSIsImlhdCI6MTczMzcwNzA0NywiZXhwIjoxNzMzNzA4NDg3LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.fDpjnrgvlUnk2t3ktis8UEDMFKcu4rJcF9l3tWUxjUkRY3MgUTr3Ve6ZRWgDZtj64LQ1TmP3sjxBxb4kKKy8nA&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:17:27 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="357cade3-758c-49e4-9805-da6227fc5fb9" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoiaUBleGFtcGxlLmNvbSIsImlhdCI6MTczMzcwNzA0NywiZXhwIjoxNzMzNzA4NDg3LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.fDpjnrgvlUnk2t3ktis8UEDMFKcu4rJcF9l3tWUxjUkRY3MgUTr3Ve6ZRWgDZtj64LQ1TmP3sjxBxb4kKKy8nA&quot;}" />
+              <option name="size" value="256" />
+              <option name="time" value="142" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733707060011" />
+          <option name="id" value="34e00c96-2607-413b-8c9f-eff01ae8b9b8" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;f@example.com&quot;,&#10;    &quot;password&quot;: &quot;f&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticate" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="403" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:17:40 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="34e00c96-2607-413b-8c9f-eff01ae8b9b8" />
+              <option name="message" value="Forbidden" />
+              <option name="time" value="8" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733707069218" />
+          <option name="id" value="fce8d4ad-a4e0-4f84-9227-ce96b92705f0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;admin@example.com&quot;,&#10;    &quot;password&quot;: &quot;admin&quot;,&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="de9f1c99-a686-46e6-b9d4-e549aa023982" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft (2)" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/authenticate" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0b2tlbiI6ImV5SmhiR2NpT2lKRlV6STFOaUo5LmV5Sm1kV3hzVG1GdFpTSTZJbUZrYldsdUlHRmtiV2x1SWl3aWMzVmlJam9pWVdSdGFXNUFaWGhoYlhCc1pTNWpiMjBpTENKcFlYUWlPakUzTXpNM01EY3dOamtzSW1WNGNDSTZNVGN6TXpjd09EVXdPU3dpWVhWMGFHOXlhWFJwWlhNaU9sc2lWVk5GVWlKZGZRLm5zeDM4YXRHTVlMQ19zdGZXSVVka1NPczRKZ0lhYkl6TXA0TnFOd1hKX3hGTUI5TE9hQm1SenhsN2l2QWtyaXRBWnFNVnJRUmRCQ0s3TkxQRVBsR0RRIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;token&quot;: &quot;eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6ImFkbWluIGFkbWluIiwic3ViIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJpYXQiOjE3MzM3MDcwNjksImV4cCI6MTczMzcwODUwOSwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdfQ.nsx38atGMYLC_stfWIUdkSOs4JgIabIzMp4NqNwXJ_xFMB9LOaBmRzxl7ivAkritAZqMVrQRdBCK7NLPEPlGDQ&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-XSS-Protection" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Cache-Control" />
+                    <option name="value" value="no-cache, no-store, max-age=0, must-revalidate" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Pragma" />
+                    <option name="value" value="no-cache" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Expires" />
+                    <option name="value" value="0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Frame-Options" />
+                    <option name="value" value="DENY" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Dec 2024 01:17:49 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="fce8d4ad-a4e0-4f84-9227-ce96b92705f0" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;token&quot;:&quot;eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6ImFkbWluIGFkbWluIiwic3ViIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJpYXQiOjE3MzM3MDcwNjksImV4cCI6MTczMzcwODUwOSwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdfQ.nsx38atGMYLC_stfWIUdkSOs4JgIabIzMp4NqNwXJ_xFMB9LOaBmRzxl7ivAkritAZqMVrQRdBCK7NLPEPlGDQ&quot;}" />
+              <option name="size" value="266" />
+              <option name="time" value="77" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>

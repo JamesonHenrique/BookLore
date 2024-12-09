@@ -11,7 +11,8 @@ import lombok.Builder;
 @Builder
 public record RegisterRequest(
         @NotEmpty(message = "Firstname is mandatory")
-        @NotNull(message = "Firstname is mandatory")String firstName,
+        @NotNull(message = "Firstname is mandatory")
+        String firstName,
         @NotEmpty(message = "Lastname is mandatory")
         @NotNull(message = "Lastname is mandatory")
         String lastName,
