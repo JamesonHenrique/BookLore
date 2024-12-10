@@ -1,6 +1,7 @@
 package com.jhcs.booklore.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.jhcs.booklore.book.Book;
 import com.jhcs.booklore.history.BookTransactionHistory;
 import jakarta.persistence.*;
 import lombok.*;

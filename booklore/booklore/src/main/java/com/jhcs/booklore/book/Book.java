@@ -1,6 +1,8 @@
-package com.jhcs.booklore.entity;
+package com.jhcs.booklore.book;
 
 import com.jhcs.booklore.commun.BaseEntity;
+import com.jhcs.booklore.entity.Feedback;
+import com.jhcs.booklore.entity.User;
 import com.jhcs.booklore.history.BookTransactionHistory;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,7 +12,6 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -34,6 +35,14 @@ public class Book extends BaseEntity {
     @OneToMany(mappedBy = "book")
     private List<Feedback> feedbacks;
     @OneToMany(mappedBy = "book")
-    private List<BookTransactionHistory
-            > histories;
+    private List<BookTransactionHistory> histories;
+    @Transient
+    public double getRate() {
+        if(feedbacks == null || feedbacks.isEmpty()) {
+            return 0.0;
+        }
+        var rate = feedbacks.stream().mapToDouble(Feedback::getNote).average().orElse(0.0);
+        var roundedRate = Math.round(rate * 10) / 10.0;
+        return roundedRate;
+    }
 }

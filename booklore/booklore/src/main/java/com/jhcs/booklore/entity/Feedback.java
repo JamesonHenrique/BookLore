@@ -1,5 +1,6 @@
 package com.jhcs.booklore.entity;
 
+import com.jhcs.booklore.book.Book;
 import com.jhcs.booklore.commun.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
