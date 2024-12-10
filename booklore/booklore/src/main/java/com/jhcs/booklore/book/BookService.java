@@ -3,6 +3,8 @@ package com.jhcs.booklore.book;
 import com.jhcs.booklore.commun.PageResponse;
 import com.jhcs.booklore.entity.User;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -36,11 +38,11 @@ public class BookService {
         User user = (User) connectedUser.getPrincipal();
         Pageable pageable = PageRequest.of(page, size, Sort.by("createdDate").descending());
         Page<Book> books = bookRepository.findAllDisplayableBooks(pageable,user.getId());
-        List<BookResponse> bookResponses = books.stream()
+        List<BookResponse> bookResponse = books.stream()
                 .map(bookMapper::toBookResponse)
                 .collect(Collectors.toList());
         return new PageResponse<>(
-                bookResponses,
+                bookResponse,
                 books.getNumber(),
                 books.getSize(),
                 books.getTotalElements(),
@@ -54,5 +56,27 @@ public class BookService {
         return bookRepository.findById(id)
                 .map(bookMapper::toBookResponse)
                 .orElseThrow(() -> new EntityNotFoundException("No book found with id " + id));
+
+    }
+
+    public PageResponse<BookResponse> findAllByOwner(
+            int size,
+           int page,
+            Authentication connectedUser
+                                                    ) {
+        User user = (User) connectedUser.getPrincipal();
+        Pageable pageable = PageRequest.of(page, size, Sort.by("createdDate").descending());
+        Page<Book> books = bookRepository.findAll(BookSpecification.withOwnerId(user.getId()), pageable);
+        List<BookResponse> bookResponse = books.stream()
+                .map(bookMapper::toBookResponse)
+                .collect(Collectors.toList());
+        return new PageResponse<>(
+                bookResponse,
+                books.getNumber(),
+                books.getSize(),
+                books.getTotalElements(),
+                books.getTotalPages(),
+                books.isFirst(),
+                books.isLast());
     }
 }
