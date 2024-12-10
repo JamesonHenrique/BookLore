@@ -2,6 +2,7 @@ package com.jhcs.booklore.book;
 
 import com.jhcs.booklore.commun.PageResponse;
 import com.jhcs.booklore.entity.User;
+import com.jhcs.booklore.exception.OperationNotPermittedException;
 import com.jhcs.booklore.history.BookTransactionHistory;
 import com.jhcs.booklore.history.BookTransactionHistoryRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -16,6 +17,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -124,4 +126,68 @@ public class BookService {
                 allBorrewedBooks.isFirst(),
                 allBorrewedBooks.isLast());
     }
+
+    public Long updateShareableStatus(
+            Long id,
+            Authentication connectedUser
+                                        ) {
+        User user = (User) connectedUser.getPrincipal();
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("No book found with id " + id));
+        if (!Objects.equals(book.getOwner().getId(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot update the shareable status of this book");
+        }
+        book.setShareable(!book.isShareable());
+        bookRepository.save(book);
+        return book.getId();
+
+    }
+    public Long updateArchivedStatus(
+            Long id,
+            Authentication connectedUser
+                                     ) {
+        User user = (User) connectedUser.getPrincipal();
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("No book found with id " + id));
+        if (!Objects.equals(book.getOwner().getId(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot update the archived status of this book");
+        }
+        book.setArchived(!book.isArchived());
+        bookRepository.save(book);
+        return book.getId();
+
+    }
+
+
+    public Long borrowBook(Long id, Authentication connectedUser) {
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("No book found with ID:: " + id));
+        if (book.isArchived() || !book.isShareable()) {
+            throw new OperationNotPermittedException("The requested book cannot be borrowed since it is archived or not shareable");
+        }
+        User user = ((User) connectedUser.getPrincipal());
+        if (Objects.equals(book.getOwner().getId(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot borrow your own book");
+        }
+        final boolean isAlreadyBorrowedByUser = transactionHistoryRepository.isAlreadyBorrowedByUser(id, user.getId());
+        if (isAlreadyBorrowedByUser) {
+            throw new OperationNotPermittedException("You already borrowed this book and it is still not returned or the return is not approved by the owner");
+        }
+
+        final boolean isAlreadyBorrowedByOtherUser = transactionHistoryRepository.isAlreadyBorrowed(id);
+        if (isAlreadyBorrowedByOtherUser) {
+            throw new OperationNotPermittedException("The requested book is already borrowed");
+        }
+
+        BookTransactionHistory bookTransactionHistory = BookTransactionHistory.builder()
+                .user(user)
+                .book(book)
+                .returned(false)
+                .returnApproved(false)
+                .build();
+        return transactionHistoryRepository.save(bookTransactionHistory).getId();
+
+    }
+
 }
+
