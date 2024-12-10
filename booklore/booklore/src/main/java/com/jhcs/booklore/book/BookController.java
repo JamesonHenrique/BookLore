@@ -70,5 +70,28 @@ public class BookController {
 
         return ResponseEntity.ok(bookService.findAllReturnedBooks(size, page, connectedUser));
     }
+    @PatchMapping("/shareable/{id}")
+    public ResponseEntity<Long> updateShareableStatus(
+            @PathVariable Long id,
+
+            Authentication connectedUser
+                                              ) {
+        return ResponseEntity.ok(bookService.updateShareableStatus(id, connectedUser));
+    }
+    @PatchMapping("/archived/{id}")
+    public ResponseEntity<Long> updateArchivedStatus(
+            @PathVariable Long id,
+
+            Authentication connectedUser
+                                                     ) {
+        return ResponseEntity.ok(bookService.updateArchivedStatus(id, connectedUser));
+    }
+    @PostMapping("/borrow/{id}")
+    public ResponseEntity<Long> borrowBook(
+            @PathVariable Long id,
+            Authentication connectedUser
+                                          ) {
+        return ResponseEntity.ok(bookService.borrowBook(id, connectedUser));
+    }
 
 }
