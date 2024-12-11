@@ -41,6 +41,7 @@ public class FileStorageService {
                log.warn("Failed to create folder {}", targetFolder);
                return null;
 
+
               }
         }
         final String fileExtension = getFileExtension(sourceFIle.getOriginalFilename());
