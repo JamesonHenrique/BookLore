@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeedBackController {
     private final FeedBackService feedbackService;
     @PostMapping
-    public ResponseEntity saveFeedback(
+    public ResponseEntity<Long> saveFeedback(
             @Valid
             @RequestBody FeedbackRequest request,
             Authentication connectedUser

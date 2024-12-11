@@ -3,7 +3,9 @@ import com.jhcs.booklore.application.dto.FeedbackRequest;
 
 import com.jhcs.booklore.domain.entity.Book;
 import com.jhcs.booklore.domain.entity.Feedback;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FeedbackMapper {
     public static Feedback toFeedback( FeedbackRequest request) {
         return Feedback.builder()
