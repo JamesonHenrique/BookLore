@@ -8,7 +8,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;i@example.com&quot;,&#10;    &quot;password&quot;: &quot;i&quot;,&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;    &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;email&quot;: &quot;k@example.com&quot;,&#10;    &quot;password&quot;: &quot;12345678&quot;,&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -18,6 +18,16 @@
               <option name="url" value="http://localhost:8088/api/v1/auth/register" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJrQGV4YW1wbGUuY29tIiwiaWF0IjoxNzMzOTU5MjI0LCJleHAiOjE3MzM5NjA2NjQsImF1dGhvcml0aWVzIjpbIlVTRVIiXX0.x4BExMjVJJkhflsD3P8bOXSYCYX0XQCWf4-QHBcbCJPK2utygPMpe3-m2xka9xq_AKytyMyAJ9B1JsOZrdEifA" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="id" value="f549aa1e-8e3f-43fd-a327-7c4b708b6b09" />
               <option name="method" value="GET" />
               <option name="name" value="Draft (1)" />
@@ -25,16 +35,16 @@
                 <list>
                   <queryParamState>
                     <option name="key" value="email" />
-                    <option name="value" value="g@example.com" />
+                    <option name="value" value="k@example.com" />
                   </queryParamState>
                 </list>
               </option>
-              <option name="url" value="http://localhost:8088/api/v1/auth/?email=g@example.com" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/?email=k@example.com" />
             </requestState>
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;admin@example.com&quot;,&#10;    &quot;password&quot;: &quot;admin&quot;,&#10;}" />
+                  <option name="raw" value="{&#10;  &#10;  &quot;email&quot;: &quot;k@example.com&quot;,&#10;    &quot;password&quot;: &quot;12345678&quot;,&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -56,11 +66,44 @@
                 <list>
                   <queryParamState>
                     <option name="key" value="token" />
-                    <option name="value" value="316164" />
+                    <option name="value" value="139225" />
                   </queryParamState>
                 </list>
               </option>
-              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=316164" />
+              <option name="url" value="http://localhost:8088/api/v1/auth/activate-account?token=139225" />
+            </requestState>
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoia0BleGFtcGxlLmNvbSIsImlhdCI6MTczMzk1OTM0OSwiZXhwIjoxNzMzOTYwNzg5LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.Di5l-EBa19loXfojrJtfz5CI4ZnEtOVuvphwKH95JKq1GD6Ic2Am9ZjLJNUgrQKXct86a9cTK6GBeKGhhl9kDg" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="b9f2754a-0857-4c0c-b2ee-bd6a2d03169e" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (3) (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="size" />
+                    <option name="value" value="1" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="page" />
+                    <option name="value" value="1" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8088/api/v1/books?size=1&amp;page=1" />
             </requestState>
           </list>
         </option>

@@ -1,22 +1,18 @@
 package com.jhcs.booklore.infrastructure.handler;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.*;
+import lombok.Builder;
+
 
 import java.util.Map;
 import java.util.Set;
 
-@Getter
-@Setter
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class ExceptionResponse {
-
-    private Integer businessErrorCode;
-    private String businessErrorDescription;
-    private String error;
-    private Set<String> validationErrors;
-    private Map<String, String> errors;
-}
+public record ExceptionResponse(
+        Integer businessErrorCode,
+        String businessErrorDescription,
+        String error,
+        Set<String> validationErrors,
+        Map<String, String> errors
+) {}

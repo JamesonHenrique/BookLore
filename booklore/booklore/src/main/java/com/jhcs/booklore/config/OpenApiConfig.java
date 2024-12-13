@@ -8,6 +8,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.servers.Server;
+import org.springframework.context.annotation.Configuration;
 
 @OpenAPIDefinition(
 
@@ -27,8 +28,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
                         description = "PROD ENV",
                         url = "..."
                 )
-        },
-        security = @SecurityRequirement(
+        }, security = @SecurityRequirement(
                 name = "bearerAuth"
 
         )
@@ -42,4 +42,5 @@ import io.swagger.v3.oas.annotations.servers.Server;
         in = SecuritySchemeIn.HEADER,
         description = "JWT authentication description"
 )
+
 public class OpenApiConfig {}
