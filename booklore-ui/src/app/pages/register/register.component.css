@@ -1,0 +1,19 @@
+.card.w-96.bg-base-100.shadow-xl {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.774);
+
+}
+.span-error {
+  font-size: 13px;
+
+}
+img {
+  width: 30px;
+  height: auto;
+}
+.background {
+
+  background-color: rgba(255, 255, 255, 0.644);
+  background-blend-mode: overlay;
+
+}
