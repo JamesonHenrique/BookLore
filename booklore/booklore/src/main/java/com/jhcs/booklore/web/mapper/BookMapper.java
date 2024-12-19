@@ -22,6 +22,7 @@ public class BookMapper {
 
                 .build();
     }
+
     public BookResponse toBookResponse(Book book) {
 
         return BookResponse.builder()
@@ -33,7 +34,8 @@ public class BookMapper {
                 .rate(book.getRate())
                 .archived(book.isArchived())
                 .shareable(book.isShareable())
-                .owner(book.getOwner().fullName())
+                .owner(book.getOwner()
+                        .fullName())
                 .cover(FileUtils.readFileFromLocation(book.getBookCover()))
                 .build();
     }
@@ -42,10 +44,14 @@ public class BookMapper {
     public BorrowedBookResponse toBorrowedBookResponse(BookTransactionHistory bookTransactionHistory) {
         return BorrowedBookResponse.builder()
                 .id(bookTransactionHistory.getId())
-                .title(bookTransactionHistory.getBook().getTitle())
-                .authorName(bookTransactionHistory.getBook().getAuthorName())
-                .isbn(bookTransactionHistory.getBook().getIsbn())
-                .rate(bookTransactionHistory.getBook().getRate())
+                .title(bookTransactionHistory.getBook()
+                        .getTitle())
+                .authorName(bookTransactionHistory.getBook()
+                        .getAuthorName())
+                .isbn(bookTransactionHistory.getBook()
+                        .getIsbn())
+                .rate(bookTransactionHistory.getBook()
+                        .getRate())
                 .returned(bookTransactionHistory.isReturned())
                 .returnApproved(bookTransactionHistory.isReturnApproved())
                 .build();

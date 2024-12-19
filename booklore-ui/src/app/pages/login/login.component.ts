@@ -10,14 +10,7 @@ import { TokenService } from '../../services/token/token.service';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    RouterLink,
-  ],
+  
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
@@ -45,7 +38,7 @@ export class LoginComponent {
           this.router.navigate(['books']);
         },
         error: (error) => {
-       
+
           if(error.error.validationErrors) {
          this.errorMsg = error.error.validationErrors;
           }

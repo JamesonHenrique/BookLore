@@ -1,0 +1,77 @@
+<div class="min-h-screen bg-base-200 flex items-center justify-center background" style="background-image: url('assets/a.png');">
+  <div class="card bg-base-100 shadow-xl">
+    <div class="container mx-auto p-4">
+      <h2 class="text-2xl flex justify-center font-bold text-a mb-4">Gerenciar meu livro</h2>
+
+      <!-- Error Messages -->
+      <div *ngIf="isOkay == false" class="alert alert-error mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke-current shrink-0 h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <span>{{errorMsg}}</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Book Image Section -->
+          <div class="flex flex-col items-center">
+              <div class="avatar">
+                  <div class="w-64 rounded-full ring ring-primary text-a ring-offset-base-100 ring-offset-2">
+                      <img [src]="selectedBookCover" id="bookImage" />
+                  </div>
+              </div>
+              <input (change)="onFileSelected($event)" type="file" class="file-input file-input-bordered   w-full max-w-xs mt-4 " accept="image/*" id="imageUpload" />
+          </div>
+
+          <!-- Book Details Form -->
+          <form id="bookForm" class="form-control">
+              <label class="label">
+                  <span class="label-text">Titulo</span>
+              </label>
+              <input [(ngModel)]="bookRequest.title" name="title" type="text" placeholder="Book Title" class="input input-bordered w-full" id="title" required />
+
+              <label class="label">
+                  <span class="label-text">Autor</span>
+              </label>
+              <input [(ngModel)]="bookRequest.authorName"  type="text" name="authorName"  placeholder="Author Name" class="input input-bordered w-full" id="author" required />
+
+              <label class="label">
+                  <span class="label-text">ISBN</span>
+              </label>
+              <input [(ngModel)]="bookRequest.isbn "  type="text" name="isbn" placeholder="ISBN" class="input input-bordered w-full" id="isbn" required />
+
+              <label class="label">
+                  <span class="label-text">Sinopse</span>
+              </label>
+              <textarea [(ngModel)]="bookRequest.synopsis" name="synopsis"  class="textarea textarea-bordered h-24" placeholder="Book Synopsis" id="synopsis"></textarea>
+
+              <label class="label cursor-pointer">
+                  <span class="label-text">Shareable</span>
+                  <input name="shareable" [(ngModel)]="bookRequest.shareable" type="checkbox" class="toggle toggle-primary" id="shareable" />
+              </label>
+
+              <div class="mt-4">
+                  <button  (click)="saveBook()" type="submit" class="btn colors">
+                    <i class="fa-solid fa-save"></i>
+
+                    Save Book</button>
+
+                  <a [routerLink]="['/books/my-books']" class="btn  btn-ghost text-red-500">
+                    <i class="fa-solid fa-times"></i>
+                    Cancel</a>
+              </div>
+          </form>
+      </div>
+  </div>
+
+    </div>
+  </div>

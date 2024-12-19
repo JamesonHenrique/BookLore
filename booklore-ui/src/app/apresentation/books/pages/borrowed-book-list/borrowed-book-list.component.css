@@ -1,0 +1,52 @@
+.background {
+
+  background-color: rgba(255, 255, 255, 0.644);
+  background-blend-mode: overlay;
+
+
+}
+.card {
+
+ min-width: 1200px;
+
+
+}
+.items-center {
+  margin-top: -20px;
+}
+.bg-a
+{
+  background-color: #726052;
+  color: #F4F2E9;
+  border: 2px solid #372213 ;
+}
+.colors {
+  background-color: #372213;
+  color: #F4F2E9;
+  border: 2px solid #726052;
+
+}
+.active {
+  background-color: #F4F2E9;
+  color: #372213;
+  border-color: #D2D4D7 ;
+}
+.link {
+  color: #726052;
+  ;
+  transition: color 0.5s ease
+
+}
+.text-a
+ {
+  color:#372213
+ }
+ .range-primary {
+  --range-shdw: #726052;
+}
+.range{
+  width: 93%;
+}
+app-rating {
+  height: 3px;
+}

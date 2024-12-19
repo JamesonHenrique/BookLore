@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -28,6 +29,7 @@ public class BookController {
         return ResponseEntity.ok(bookService.save(request, connectedUser));
     }
 
+
     @GetMapping("/{id}")
     public ResponseEntity<BookResponse> findBookById(@PathVariable Long id) {
         return ResponseEntity.ok(bookService.findById(id));
@@ -35,7 +37,7 @@ public class BookController {
 
     @GetMapping()
     public ResponseEntity<PageResponse<BookResponse>> findAllBooks(
-            @RequestParam(defaultValue = "0", name = "page", required = false) @Positive int page,
+            @RequestParam(defaultValue = "0", name = "page", required = false) @PositiveOrZero int page,
             @RequestParam(defaultValue = "10", name = "size", required = false) @Positive @Max(100) int size,
             Authentication connectedUser
                                                                   ) {
@@ -45,7 +47,7 @@ public class BookController {
 
     @GetMapping("/owner")
     public ResponseEntity<PageResponse<BookResponse>> findAllBooksByOwner(
-            @RequestParam(defaultValue = "0", name = "page", required = false) @Positive int page,
+            @RequestParam(defaultValue = "0", name = "page", required = false) @PositiveOrZero int page,
             @RequestParam(defaultValue = "10", name = "size", required = false) @Positive @Max(100) int size,
             Authentication connectedUser
                                                                          ) {
@@ -55,7 +57,7 @@ public class BookController {
 
     @GetMapping("/borrowed")
     public ResponseEntity<PageResponse<BorrowedBookResponse>> findAllBorrowedBooks(
-            @RequestParam(defaultValue = "0", name = "page", required = false) @Positive int page,
+            @RequestParam(defaultValue = "0", name = "page", required = false) @PositiveOrZero int page,
             @RequestParam(defaultValue = "10", name = "size", required = false) @Positive @Max(100) int size,
             Authentication connectedUser
                                                                                   ) {
@@ -65,7 +67,7 @@ public class BookController {
 
     @GetMapping("/returned")
     public ResponseEntity<PageResponse<BorrowedBookResponse>> findAllReturnedBooks(
-            @RequestParam(defaultValue = "0", name = "page", required = false) @Positive int page,
+            @RequestParam(defaultValue = "0", name = "page", required = false) @PositiveOrZero int page,
             @RequestParam(defaultValue = "10", name = "size", required = false) @Positive @Max(100) int size,
             Authentication connectedUser
                                                                                   ) {

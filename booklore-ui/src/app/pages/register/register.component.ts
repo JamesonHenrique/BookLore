@@ -10,14 +10,7 @@ import { AuthenticationService } from '../../services/services';
 
 @Component({
   selector: 'app-register',
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    RouterLink,
-  ],
+  
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
@@ -44,7 +37,7 @@ export class RegisterComponent {
           this.router.navigate(['activate-account']);
         },
         error: (error) => {
-         
+
          this.errorMsg = error.error.validationErrors;
 
         }

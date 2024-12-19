@@ -77,7 +77,7 @@
                 <authState>
                   <option name="bearer">
                     <nE>
-                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoia0BleGFtcGxlLmNvbSIsImlhdCI6MTczMzk1OTM0OSwiZXhwIjoxNzMzOTYwNzg5LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.Di5l-EBa19loXfojrJtfz5CI4ZnEtOVuvphwKH95JKq1GD6Ic2Am9ZjLJNUgrQKXct86a9cTK6GBeKGhhl9kDg" />
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoia0BleGFtcGxlLmNvbSIsImlhdCI6MTczNDU0MTM4NSwiZXhwIjoxNzM0NTU1Nzg1LCJhdXRob3JpdGllcyI6WyJVU0VSIl19.x41YIoKgXKkSENVn_Avw7SlzWm1E0y1pu8J5y-b18qvIl-RpDGscGFgCRJipgIFpXKOLgVkGG-RMRNVyIp7Cdw" />
                     </nE>
                   </option>
                   <option name="type" value="BEARER" />
@@ -85,25 +85,36 @@
               </option>
               <option name="body">
                 <bodyState>
+                  <option name="raw" value="{&#10;&#10;  &quot;title&quot;: &quot;Game of Thrones&quot;,&#10;  &quot;authorName&quot;: &quot;George R. R. Martin&quot;,&#10;  &quot;isbn&quot;: &quot;978-0553103540&quot;,&#10;&#10;  &quot;synopsis&quot;: &quot;A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by American author George R. R. Martin.&quot;&#10;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
               <option name="id" value="b9f2754a-0857-4c0c-b2ee-bd6a2d03169e" />
-              <option name="method" value="GET" />
+              <option name="method" value="POST" />
               <option name="name" value="Draft (3) (1)" />
-              <option name="queryParams">
-                <list>
-                  <queryParamState>
-                    <option name="key" value="size" />
-                    <option name="value" value="1" />
-                  </queryParamState>
-                  <queryParamState>
-                    <option name="key" value="page" />
-                    <option name="value" value="1" />
-                  </queryParamState>
-                </list>
+              <option name="url" value="http://localhost:8088/api/v1/books" />
+            </requestState>
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nE>
+                      <option name="token" value="eyJhbGciOiJFUzI1NiJ9.eyJmdWxsTmFtZSI6IkpvaG4gRG9lIiwic3ViIjoia0BleGFtcGxlLmNvbSIsImlhdCI6MTczNDYzNzc4MCwiZXhwIjoxNzM0NjUyMTgwLCJhdXRob3JpdGllcyI6WyJVU0VSIl19.WR60EoxnJJpNnjvV909G17XtRwMvMkLroFb-O_C-HgRc2fsU7JWcvzSwzmzQPOam5MzkNy1MRfo-h383DQUHsw" />
+                    </nE>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
               </option>
-              <option name="url" value="http://localhost:8088/api/v1/books?size=1&amp;page=1" />
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;&#10;  &quot;title&quot;: &quot;Game of Thrones&quot;,&#10;  &quot;author&quot;: &quot;George R. R. Martin&quot;,&#10;  &quot;isbn&quot;: &quot;978-0553103540&quot;,&#10; &#10;  &quot;synopsys&quot;: &quot;A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by American author George R. R. Martin.&quot;&#10;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="3b448c77-89f0-432f-9ff5-152b3c30f7bf" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (2) (1)" />
+              <option name="url" value=" http://localhost:8088/api/v1/books/borrowed" />
             </requestState>
           </list>
         </option>

@@ -1,0 +1,43 @@
+.background {
+
+  background-color: rgba(255, 255, 255, 0.644);
+  background-blend-mode: overlay;
+  overflow: auto  !important;
+
+}
+btn-link {
+  color: #726052;
+  ;
+  transition: color 0.5s ease
+
+
+}
+.active {
+  background-color: #F4F2E9;
+  color: #372213;
+  border-color: #D2D4D7 ;
+}
+.bg-a
+{
+  background-color: #372213
+}
+.colors {
+  background-color: #372213;
+  color: #F4F2E9;
+  border-color: #D2D4D7 ;
+}
+.colors-activate {
+  background-color: #F4F2E9;
+  color: #372213;
+  border-color: #D2D4D7 ;
+}
+.link {
+  color: #726052;
+  ;
+  transition: color 0.5s ease
+
+}
+.text-a
+ {
+  color:#372213
+ }

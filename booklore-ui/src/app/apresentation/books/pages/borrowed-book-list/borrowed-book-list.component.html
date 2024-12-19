@@ -1,0 +1,190 @@
+<div
+  class="min-h-screen bg-base-200 flex items-center justify-center background"
+  style="background-image: url('assets/a.png')"
+>
+  <div class="card bg-base-100 shadow-xl">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-8">Meus Livros Emprestados</h1>
+
+      <!-- Seção de Retorno e Feedback -->
+      <div class="mb-8 p-4 bg-base-200 rounded-lg" *ngIf="selectedBook">
+        <h2 class="text-2xl font-semibold mb-4">
+          Retornar e Compartilhar Feedback
+        </h2>
+        <div id="selectedBookInfo" class="mb-4">
+          <p>
+            <strong>Título: </strong>
+            <span id="bookTitle">{{ selectedBook.title }}</span>
+          </p>
+          <p>
+            <strong>Autor: </strong>
+            <span id="bookAuthor">{{ selectedBook.authorName }}</span>
+          </p>
+          <p>
+            <strong>ISBN: </strong>
+            <span id="bookISBN">{{ selectedBook.isbn }}</span>
+          </p>
+          <p>
+            <strong>Avaliação Atual: </strong>
+            <span id="currentRating">{{ selectedBook.rate }}</span>
+          </p>
+        </div>
+        <form id="feedbackForm" class="space-y-4">
+          <div class=""></div>
+          <div>
+            <label for="rating" class="block mb-2">Avaliação:</label>
+            <input
+              [(ngModel)]="feedbackRequest.note"
+              step="0.5"
+              type="range"
+              id="rating"
+              name="rating"
+              min="1"
+              max="5"
+              class="range range-primary"
+            />
+
+            <app-rating
+              [customClass]="'flex justify-between text-xs mr-16 '"
+              [rating]="feedbackRequest.note || 0"
+            >
+            </app-rating>
+
+            {{ feedbackRequest.note }}
+          </div>
+          <div>
+            <label for="comment" class="block mb-2">Comentário:</label>
+            <textarea
+            [(ngModel)]="feedbackRequest.comment"
+              id="comment"
+              name="comment"
+              class="textarea textarea-bordered w-full"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="flex space-x-2">
+            <button  type="submit" class="btn colors " (click)="returnBook(true)">
+              <i class="fas fa-save"></i>
+              Avaliar e Retornar
+            </button>
+            <button  (click)="returnBook(false)" type="button" class="btn bg-a">
+              <i class="fas fa-paper-plane"></i>
+              Apenas Retornar
+            </button>
+            <button (click)="selectedBook = undefined" type="button" class="btn btn-ghost text-red-500">
+              <i class="fas fa-times"></i>
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Tabela de Livros Emprestados -->
+      <div *ngIf="!selectedBook" class="overflow-x-auto">
+        <table class="table w-full">
+          <thead>
+            <tr>
+              <th>Nº</th>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>ISBN</th>
+              <th>Avaliação</th>
+              <th class=""><i class="fas fa-cogs"></i></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Exemplo de linha da tabela -->
+            <tr *ngFor="let book of borrowedBooks.content; let index = index">
+              <th scope="row">{{ index + 1 }}</th>
+              <td>{{ book.title }}</td>
+              <td>{{ book.authorName }}</td>
+              <td>{{ book.isbn }}</td>
+              <td><i class="fas fa-star text-warning"></i> {{ book.rate }}</td>
+
+              <td>
+                <div class="flex cursor-pointer gap-2">
+                  <i
+                    *ngIf="book.returned"
+                    class="fa-regular pointer c fa-paper-plane text-primary"
+                  ></i>
+                  <i
+                    *ngIf="!book.returned"
+                    (click)="returnBorrowedBook(book)"
+                    class="fa-solid fa-paper-plane text-success"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-check"
+                    [class.text-success]="book.returnApproved"
+                  ></i>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="flex justify-center mt-3">
+        <ul>
+          <li class="btn m-0.5 colors btn-sm">
+            <a
+              (click)="goToFirstPage()"
+              class="page-link"
+              href="javascript:void(0)"
+              aria-label="Previous"
+              [class.disabled]="page === 0"
+            >
+              <i class="fa-solid fa-angle-double-left"></i>
+            </a>
+          </li>
+          <li class="btn m.5 colors btn-sm">
+            <a
+              (click)="goToPreviousPage()"
+              class="page-link"
+              href="javascript:void(0)"
+              aria-label="Previous"
+              [class.disabled]="page === 0"
+            >
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+          </li>
+          <li
+            *ngFor="let pageIndex of pages"
+            class="btn btn-sm m-0.5 btn-active"
+            [class.active]="page === pageIndex"
+          >
+            <a
+              (click)="gotToPage(pageIndex)"
+              class="page-link"
+              [class.active]="page === pageIndex"
+              href="javascript:void(0)"
+              >{{ pageIndex + 1 }}</a
+            >
+          </li>
+
+          <li class="btn colors m-0.5 btn-sm">
+            <a
+              (click)="goToNextPage()"
+              class="page-link"
+              href="javascript:void(0)"
+              aria-label="Next"
+              [class.disabled]="isLastPage"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="btn colors m-0.5 btn-sm">
+            <a
+              (click)="goToLastPage()"
+              class="page-link"
+              href="javascript:void(0)"
+              aria-label="Next"
+              [class.disabled]="isLastPage"
+            >
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

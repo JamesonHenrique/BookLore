@@ -96,6 +96,6 @@ public class User implements UserDetails,
 
     @Override
     public String getName() {
-        return "";
+        return email;
     }
 }

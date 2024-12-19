@@ -1,6 +1,7 @@
+
 package com.jhcs.booklore.infrastructure.file;
 
-import lombok.NonNull;
+import jakarta.annotation.Nonnull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,48 +12,50 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static java.io.File.separator;
-@Slf4j
+import static java.lang.System.currentTimeMillis;
+
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class FileStorageService {
+
     @Value("${application.file.uploads.photos-output-path}")
     private String fileUploadPath;
 
     public String saveFile(
-            @NonNull MultipartFile sourceFIle,
-             @NonNull Long id
+            @Nonnull MultipartFile sourceFile,
+            @Nonnull Long userId
                           ) {
-        final String fileUploadSubPath = "users" + separator + id ;
-
-        return uploadFile(sourceFIle,fileUploadSubPath);
+        final String fileUploadSubPath = "users" + separator + userId;
+        return uploadFile(sourceFile, fileUploadSubPath);
     }
 
     private String uploadFile(
-            @NonNull MultipartFile sourceFIle,
-            @NonNull String fileUploadSubPath
-                              ) {
-        final String finalUploadPath = this.fileUploadPath + separator + fileUploadSubPath;
-        File targetFolder = new File(fileUploadPath);
+            @Nonnull MultipartFile sourceFile,
+            @Nonnull String fileUploadSubPath
+                             ) {
+        final String finalUploadPath = fileUploadPath + separator + fileUploadSubPath;
+        File targetFolder = new File(finalUploadPath);
+
         if (!targetFolder.exists()) {
-           boolean folderCreated = targetFolder.mkdirs();
-              if (!folderCreated) {
-               log.warn("Failed to create folder {}", targetFolder);
-               return null;
-
-
-              }
+            boolean folderCreated = targetFolder.mkdirs();
+            if (!folderCreated) {
+                log.warn("Falha ao criar a pasta de destino: " + targetFolder);
+                return null;
+            }
         }
-        final String fileExtension = getFileExtension(sourceFIle.getOriginalFilename());
-        final String targetFileName = finalUploadPath + separator + System.currentTimeMillis() + "." + fileExtension;
-        Path targetPath = Path.of(targetFileName);
+        final String fileExtension = getFileExtension(sourceFile.getOriginalFilename());
+        String targetFilePath = finalUploadPath + separator + currentTimeMillis() + "." + fileExtension;
+        Path targetPath = Paths.get(targetFilePath);
         try {
-            Files.write(targetPath, sourceFIle.getBytes());
-            return targetFileName;
+            Files.write(targetPath, sourceFile.getBytes());
+            log.info("Arquivo salvo em: " + targetFilePath);
+            return targetFilePath;
         } catch (IOException e) {
-            log.error("File was not saved", e);
-
+            log.error("O arquivo não foi salvo", e);
         }
         return null;
     }
@@ -65,6 +68,6 @@ public class FileStorageService {
         if (lastDotIndex == -1) {
             return "";
         }
-        return fileName.substring(lastDotIndex+1).toLowerCase();
+        return fileName.substring(lastDotIndex + 1).toLowerCase();
     }
 }

@@ -2,7 +2,7 @@
 <div class="min-h-screen bg-base-200 flex items-center justify-center background" style="background-image: url('assets/a.png');">
   <div class="card w-96 bg-base-100 shadow-xl">
     <div class="card-body">
-      <h2 class="text-3xl font-bold mb-6 text-center text-neutral">
+      <h2 class="text-3xl font-bold mb-6 text-center text-neutral bg-a">
        Bem-vindo ao BookLore
 
       </h2>
@@ -10,7 +10,7 @@
 
 
 
-      <p class="text-center mb-4 text-gray-600">
+      <p class="text-center mb-4  bg-a">
         Entre na sua conta para explorar um mundo de livros.
       </p>
       <div *ngIf="errorMsg.length" role="alert" class="alert alert-error span-error">
@@ -83,13 +83,11 @@
 
 
         <label class="label">
-          <a href="#" class="label-text-alt link link-hover"
-            >Esqueceu a senha?</a
-          >
+         
         </label>
       </div>
 
-      <button type="button" class="btn btn-neutral w-full mb-3" (click)="login()">
+      <button type="button" class="btn colors btn-neutral w-full mb-3" (click)="login()">
         Entrar
       </button>
 
@@ -108,5 +106,5 @@
       </p>
     </div>
   </div>
-</div>
+
 

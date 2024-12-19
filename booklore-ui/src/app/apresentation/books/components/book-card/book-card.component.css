@@ -1,0 +1,57 @@
+btn-link {
+  color: #726052;
+  ;
+  transition: color 0.5s ease
+
+
+}
+.bg-a
+{
+  color: #726052;
+}
+.colors {
+  background-color: #F4F2E9;
+  color: #726052;
+  border-color: #D2D4D7 ;
+}
+.link {
+  color: #726052;
+  ;
+  transition: color 0.5s ease
+
+}
+.text-a
+ {
+  color:#372213
+ }
+ figure {
+  min-height: 150px;
+  max-height: 150px;
+  width: 100%; /* Defina a largura */
+  height: 200px; /* Defina a altura */
+  object-fit: fill; /* Ou outro valor como contain, fill, etc. */
+}
+ img {
+  width: 100%; /* Defina a largura */
+  height: 100%; /* Defina a altura */
+  object-fit: fill; /* Ajuste conforme necessário */
+}
+.card {
+  max-height: 500px;
+  min-height: 500px;
+  border-radius: 5px;
+  min-width: 230px;
+}
+
+.alert-success {
+
+  border: 2px solid #00ffa6;
+
+
+}
+.alert-warning {
+
+
+
+  border: 2px solid #ff6600;
+}

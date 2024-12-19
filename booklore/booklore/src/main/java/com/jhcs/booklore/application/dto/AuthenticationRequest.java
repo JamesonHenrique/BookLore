@@ -6,10 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;
 
-
 @Builder
 public record AuthenticationRequest(
-        @Email(message = "Email is not well formatted") @NotEmpty(message = "Email is mandatory") @NotNull(message =
-                "Email is mandatory") String email,
-        @NotEmpty(message = "Password is mandatory") @NotNull(message = "Password is mandatory") @Size(min = 8,
-                message = "Password should be 8 characters long minimum") String password) {}
+        @Email(message = "O e-mail não está bem formatado") @NotEmpty(message = "O e-mail é obrigatório") @NotNull(message = "O e-mail é obrigatório") String email,
+        @NotEmpty(message = "A senha é obrigatória") @NotNull(message = "A senha é obrigatória") @Size(min = 8, message = "A senha deve ter no mínimo 8 caracteres") String password) {}

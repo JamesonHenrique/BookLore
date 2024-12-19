@@ -46,14 +46,14 @@ public class AuthenticationService {
             throws
             MessagingException {
         var tokenEntity = tokenRepository.findByToken(token)
-                .orElseThrow(() -> new RuntimeException("Invalid token"));
+                .orElseThrow(() -> new RuntimeException("Token inválido"));
         if (tokenEntity.getExpiresAt()
                 .isBefore(LocalDateTime.now())) {
             senfValidationEmail(tokenEntity.getUser());
-            throw new RuntimeException("Token expired");
+            throw new RuntimeException("Token expirado");
         } var user = userRepository.findById(tokenEntity.getUser()
                         .getId())
-                .orElseThrow(() -> new UsernameNotFoundException("User not found")); user.setEnabled(true);
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario não encontrado")); user.setEnabled(true);
         userRepository.save(user); tokenRepository.delete(tokenEntity);
     }
 
@@ -74,7 +74,7 @@ public class AuthenticationService {
             throws
             MessagingException {
         var userole = roleRepository.findByName("USER")
-                .orElseThrow(() -> new RuntimeException("Role not found")); var user = User.builder()
+                .orElseThrow(() -> new RuntimeException("Regra não encontrada")); var user = User.builder()
                 .firstName(request.firstName())
                 .lastName(request.lastName())
                 .email(request.email())
@@ -112,7 +112,7 @@ public class AuthenticationService {
                 .token(generatedToken)
                 .createdAt(LocalDateTime.now())
                 .expiresAt(LocalDateTime.now()
-                        .plusMinutes(15))
+                        .plusMinutes(60))
                 .user(user)
                 .build(); tokenRepository.save(token); return generatedToken;
 

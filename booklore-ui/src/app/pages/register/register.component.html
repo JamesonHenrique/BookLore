@@ -2,11 +2,11 @@
 <div class="min-h-screen bg-base-200 flex items-center justify-center background" style="background-image: url('assets/a.png');">
   <div class="card w-96 bg-base-100 shadow-xl">
     <div class="card-body">
-      <h2 class="text-3xl font-bold mb-6 text-center text-neutral">
+      <h2 class="text-3xl font-bold mb-6 text-center bg-a">
         Crie sua conta no BookLore
       </h2>
 
-      <p class="text-center mb-4 text-gray-600">
+      <p class="text-center mb-4 bg-a">
         Preencha os campos abaixo para se registrar e começar sua jornada literária.
       </p>
       <div *ngIf="errorMsg.length" role="alert" class="alert alert-error span-error">
@@ -122,13 +122,13 @@
 
       </div>
 
-      <button type="button" class="btn btn-neutral w-full mb-3" (click)="register()">
+      <button type="button" class="btn btn-neutral colors w-full mb-3" (click)="register()">
         Crie sua conta
       </button>
 
       <div class="divider">OU</div>
 
-      <p class="text-center mt-3">
+      <p class="text-center  mt-3">
         Já tem uma conta?
         <a
 

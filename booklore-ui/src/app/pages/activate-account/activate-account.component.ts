@@ -9,15 +9,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-activate-account',
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    RouterLink,
-    CodeInputModule
-  ],
+  
   templateUrl: './activate-account.component.html',
   styleUrl: './activate-account.component.css',
   animations: [

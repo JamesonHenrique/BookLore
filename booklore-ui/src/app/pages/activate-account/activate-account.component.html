@@ -10,11 +10,11 @@
       *ngIf="submitted; else codeForm"
     >
       <div class="card-body">
-        <h2 class="text-3xl font-bold text-green-600 text-center mb-3">
+        <h2 class="text-3xl font-bold text-green-500 text-center bg-a mb-3">
           Ativação Bem-Sucedida!
         </h2>
         <p class="text-center mb-3">{{message}}.</p>
-        <button class="btn btn-neutral w-full" (click)="redirectToLogin()">
+        <button class="btn btn-neutral w-full colors" (click)="redirectToLogin()">
           Ir para Login
         </button>
       </div>
@@ -32,7 +32,7 @@
           Falha na Ativação!
         </h2>
         <p class="text-center mb-3">{{ message }}</p>
-        <button class="btn btn-neutral w-full" (click)="isOkay = true">
+        <button class="btn btn-neutral w-full colors" (click)="isOkay">
           Tentar novamente
         </button>
       </div>
@@ -48,8 +48,8 @@
   >
     <div class="card w-full bg-base-100 max-w-md shadow-xl">
       <div class="card-body">
-        <h2 class="text-3xl font-bold text-center mb-3">Ative Sua Conta</h2>
-        <p class="text-center mb-3">
+        <h2 class="text-3xl font-bold text-center mb-3 bg-a">Ative Sua Conta</h2>
+        <p class="text-center bg-a mb-3">
           Digite o código de 6 dígitos enviado para seu e-mail
         </p>
         <code-input
@@ -58,7 +58,7 @@
           [codeLength]="6"
           (codeCompleted)="onCodeCompleted($event)"
         ></code-input>
-        <button (click)="redirectToLogin()" class="btn btn-blue w-full">
+        <button (click)="redirectToLogin()" class="btn btn-neutral colors w-full">
           Ativar Conta
         </button>
       </div>
