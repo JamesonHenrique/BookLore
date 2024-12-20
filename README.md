@@ -67,7 +67,8 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 
 Durante o desenvolvimento do projeto, aprendi como:  
 
-- Projetar um diagrama de classes a partir de requisitos de negócio  
+- Projetar um diagrama de classes a partir de requisitos de negócio
+- Organizar o projeto com Arquitetura Limpa
 - Implementar uma abordagem de mono-repositório  
 - Proteger uma aplicação usando tokens JWT com Spring Security  
 - Registrar usuários e validar contas por meio de e-mail  
