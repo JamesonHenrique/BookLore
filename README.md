@@ -63,9 +63,9 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 - Tailwind
 - Daisy-Ui
 
-## Objetivos de Aprendizado  
+## Aprendizagem  
 
-Ao acompanhar este projeto, os estudantes aprenderão a:  
+Durante o desenvolvimento do projeto, aprendi como:  
 
 - Projetar um diagrama de classes a partir de requisitos de negócio  
 - Implementar uma abordagem de mono-repositório  
