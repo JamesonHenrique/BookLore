@@ -29,7 +29,6 @@
               </a>
             </li>
 
-
             <li>
               <a [routerLink]="['/books/my-returned-books']" class="icon bg-a">
                 <i class="fas fa-share mr-2"></i>
@@ -59,8 +58,13 @@
                   <i class="fas fa-search"></i>
                 </button>
               </button>
-             
-              <button [routerLink]="['/login']" (click)="logout()" class="btn btn-link" type="submit">
+
+              <button
+                [routerLink]="['/login']"
+                (click)="logout()"
+                class="btn btn-link"
+                type="submit"
+              >
                 <i class="fas fa-door-open"></i>
               </button>
             </form>

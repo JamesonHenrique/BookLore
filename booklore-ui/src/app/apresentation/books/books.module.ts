@@ -14,27 +14,18 @@ import { BookCardComponent } from './components/book-card/book-card.component';
 import { RatingComponent } from './components/raiting/rating.component';
 import { ManageBookComponent } from './pages/manage-book/manage-book.component';
 
-
 @NgModule({
   declarations: [
     MainComponent,
     MenuComponent,
     BookListComponent,
-
     MyBooksComponent,
-
     BorrowedBookListComponent,
-
     ReturnedBooksComponent,
     BookCardComponent,
     RatingComponent,
-    ManageBookComponent
-
+    ManageBookComponent,
   ],
-  imports: [
-    CommonModule,
-    BookRoutingModule,
-    FormsModule
-  ]
+  imports: [CommonModule, BookRoutingModule, FormsModule],
 })
-export class BookModule { }
+export class BookModule {}

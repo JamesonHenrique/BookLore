@@ -11,53 +11,46 @@ import { AuthGuard } from '../../services/guard/guard.service';
 const routes: Routes = [
   {
     path: '',
-     component: MainComponent,
+    component: MainComponent,
 
-    children:
-     [
+    children: [
       {
         path: '',
         component: BookListComponent,
-        canActivateChild: [AuthGuard]
-
+        canActivateChild: [AuthGuard],
       },
       {
         path: 'my-books',
         component: MyBooksComponent,
-        canActivateChild: [AuthGuard]
-
+        canActivateChild: [AuthGuard],
       },
       {
         path: 'my-borrowed-books',
         component: BorrowedBookListComponent,
-        canActivateChild: [AuthGuard]
-
+        canActivateChild: [AuthGuard],
       },
 
       {
         path: 'my-returned-books',
         component: ReturnedBooksComponent,
-        canActivateChild: [AuthGuard]
-
+        canActivateChild: [AuthGuard],
       },
       {
         path: 'manage/:id',
         component: ManageBookComponent,
-        canActivateChild: [AuthGuard]
-
+        canActivateChild: [AuthGuard],
       },
       {
         path: 'manage',
         component: ManageBookComponent,
-        canActivateChild: [AuthGuard]
-
-      }],
-   },
+        canActivateChild: [AuthGuard],
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class BookRoutingModule {
-}
+export class BookRoutingModule {}

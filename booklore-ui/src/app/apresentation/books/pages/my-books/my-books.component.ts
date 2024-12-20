@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { BookResponse, PageResponseBookResponse } from '../../../../services/models';
+import {
+  BookResponse,
+  PageResponseBookResponse,
+} from '../../../../services/models';
 import { Router } from '@angular/router';
 import { BooksService } from '../../../../services/services';
 
@@ -7,20 +10,18 @@ import { BooksService } from '../../../../services/services';
   selector: 'app-my-books',
 
   templateUrl: './my-books.component.html',
-  styleUrl: './my-books.component.css'
+  styleUrl: './my-books.component.css',
 })
 export class MyBooksComponent {
-  bookResponse:PageResponseBookResponse = {}
-  page = 0
-  size = 5
+  bookResponse: PageResponseBookResponse = {};
+  page = 0;
+  size = 5;
 
   pages: any = [];
-  constructor(private bookService: BooksService,
-    private router: Router
-  ) { }
-  error:boolean = false
+  constructor(private bookService: BooksService, private router: Router) {}
+  error: boolean = false;
   ngOnInit(): void {
-    this.findAllBooks()
+    this.findAllBooks();
   }
   gotToPage(page: number) {
     this.page = page;
@@ -33,14 +34,14 @@ export class MyBooksComponent {
   }
 
   goToPreviousPage() {
-    if(this.page > 0){
+    if (this.page > 0) {
       this.page--;
     }
     this.findAllBooks();
   }
 
   goToLastPage() {
-    this.page = this.bookResponse.totalPages as number - 1;
+    this.page = (this.bookResponse.totalPages as number) - 1;
     this.findAllBooks();
   }
 
@@ -52,54 +53,53 @@ export class MyBooksComponent {
   }
 
   get isLastPage() {
-    return this.page === this.bookResponse.totalPages as number - 1;
+    return this.page === (this.bookResponse.totalPages as number) - 1;
   }
-
 
   displayBookDetails(book: BookResponse) {
     this.router.navigate(['books', 'details', book.id]);
   }
   findAllBooks() {
-    this.bookService.findAllBooksByOwner({
-      page: this.page,
-      size: this.size
-    }).subscribe({
-      next: (response) => {
-        console.log(response)
+    this.bookService
+      .findAllBooksByOwner({
+        page: this.page,
+        size: this.size,
+      })
+      .subscribe({
+        next: (response) => {
+          console.log(response);
 
-
-        this.bookResponse = response
-        this.pages = Array(this.bookResponse.totalPages)
+          this.bookResponse = response;
+          this.pages = Array(this.bookResponse.totalPages)
             .fill(0)
             .map((x, i) => i);
-
-
-      },
-      error: (error) => {
-
-        ;
-      }
-    })
+        },
+        error: (error) => {},
+      });
   }
 
   archiveBook(book: BookResponse) {
-    this.bookService.updateArchivedStatus({
-      'id': book.id as number
-    }).subscribe({
-      next: () => {
-        book.archived = !book.archived;
-      }
-    });
+    this.bookService
+      .updateArchivedStatus({
+        id: book.id as number,
+      })
+      .subscribe({
+        next: () => {
+          book.archived = !book.archived;
+        },
+      });
   }
 
   shareBook(book: BookResponse) {
-    this.bookService.updateShareableStatus({
-      'id': book.id as number
-    }).subscribe({
-      next: () => {
-        book.shareable = !book.shareable;
-      }
-    });
+    this.bookService
+      .updateShareableStatus({
+        id: book.id as number,
+      })
+      .subscribe({
+        next: () => {
+          book.shareable = !book.shareable;
+        },
+      });
   }
 
   editBook(book: BookResponse) {

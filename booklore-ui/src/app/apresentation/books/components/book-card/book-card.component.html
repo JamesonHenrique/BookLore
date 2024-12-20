@@ -1,33 +1,57 @@
-<div  class=""  >
-
-  <div [class.alert-success]="book.shareable"
-  [class.alert-warning]="book.archived" class="card alert  ml-1  flex gap-2 bg-base-100 shadow-xl" >
+<div class="">
+  <div
+    [class.alert-success]="book.shareable"
+    [class.alert-warning]="book.archived"
+    class="card alert ml-1 flex gap-2 bg-base-100 shadow-xl"
+  >
     <figure>
-      <img height="200" [src]="bookCover" class="card-img-top" alt="...">
+      <img height="200" [src]="bookCover" class="card-img-top" alt="..." />
     </figure>
     <div class="card-body">
-
-      <h2 class="card-title text-a "> <i class="fa-solid fa-book"></i>{{ book.title }}</h2>
+      <h2 class="card-title text-a">
+        <i class="fa-solid fa-book"></i>{{ book.title }}
+      </h2>
       <p><i class="fa-solid fa-user-check"></i>{{ book.authorName }}</p>
-      <h6 class="card-subtitle  mb-1 "><i class="fas fa-code"></i>&nbsp;{{ book.isbn }}</h6>
-      <h6 class="card-subtitle  "><i class="fas fa-user"></i>&nbsp;{{ book.owner }}</h6>
-      <hr>
-      <p class="card-text max-h-10  text-ellipsis overflow-hidden">{{ book.synopsis }}</p>
+      <h6 class="card-subtitle mb-1">
+        <i class="fas fa-code"></i>&nbsp;{{ book.isbn }}
+      </h6>
+      <h6 class="card-subtitle">
+        <i class="fas fa-user"></i>&nbsp;{{ book.owner }}
+      </h6>
+      <hr />
+      <p class="card-text max-h-10 text-ellipsis overflow-hidden">
+        {{ book.synopsis }}
+      </p>
     </div>
-    <div class="card-actions  flex justify-between">
+    <div class="card-actions flex justify-between">
       <app-rating [rating]="book.rate || 0"></app-rating>
       <span class="font-bold" *ngIf="book.rate || 0 > 0">
-        {{book.rate}}
+        {{ book.rate }}
       </span>
-      <div  class="flex  mt-1 gap-2">
-        <i *ngIf="!manage" (click)="onShowDetails()" class="fas bg-a fa-circle-info text-primary"></i>
-        <i *ngIf="!manage"(click)="onBorrow()" class="fas fa-list-check text-primary"></i>
+      <div class="flex mt-1 gap-2">
+        <i
+          *ngIf="!manage"
+          (click)="onShowDetails()"
+          class="fas bg-a fa-circle-info text-primary"
+        ></i>
+        <i
+          *ngIf="!manage"
+          (click)="onBorrow()"
+          class="fas fa-list-check text-primary"
+        ></i>
 
         <div class="flex gap-2" *ngIf="!manage">
-          <i (click)="onAddToWaitingList()" class="fas text-red-600 fa-heart text-danger"></i>
+          <i
+            (click)="onAddToWaitingList()"
+            class="fas text-red-600 fa-heart text-danger"
+          ></i>
         </div>
         <div class="flex gap-2" *ngIf="manage">
-          <i  [routerLink]="['/manage']" (click)="onEdit()" class="fas fa-edit text-success"></i>
+          <i
+            [routerLink]="['/manage']"
+            (click)="onEdit()"
+            class="fas fa-edit text-success"
+          ></i>
           <i (click)="onShare()" class="fas fa-share-nodes text-primary"></i>
           <i (click)="onArchive()" class="fas fa-archive text-danger"></i>
         </div>

@@ -6,16 +6,11 @@ import { CommonModule } from '@angular/common';
   selector: 'app-menu',
 
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrl: './menu.component.css',
 })
 export class MenuComponent {
-  constructor(private router:Router) { }
-  logout(){
-
+  constructor(private router: Router) {}
+  logout() {
     window.localStorage.removeItem('token');
-
-
- 
-
   }
 }

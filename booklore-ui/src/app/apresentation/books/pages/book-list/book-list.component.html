@@ -3,9 +3,10 @@
   style="background-image: url('assets/a.png')"
 >
   <div class="container mx-auto">
-    <h3 class="text-2xl flex justify-center font-bold text-a mb-4">Lista de Livros</h3>
+    <h3 class="text-2xl flex justify-center font-bold text-a mb-4">
+      Lista de Livros
+    </h3>
 
-    <!-- Seção de mensagens de alerta -->
     <div class="alert alert-success m-2 mb-4" *ngIf="submitted">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +21,7 @@
           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      <span>{{message}}</span>
+      <span>{{ message }}</span>
     </div>
     <div *ngIf="isOkay == false" class="alert alert-error mb-4">
       <svg
@@ -36,43 +37,37 @@
           d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      <span>{{message}}</span>
+      <span>{{ message }}</span>
     </div>
 
-    <hr class="my-4  " />
+    <hr class="my-4" />
 
-
-    <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 p-4">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4"
+    >
       <app-book-card
-      *ngFor="let book of bookResponse.content"
-      [book]="book"
-      (borrow)="borrowBook($event)"
-      (details)="displayBookDetails($event)"
-    ></app-book-card>
-
+        *ngFor="let book of bookResponse.content"
+        [book]="book"
+        (borrow)="borrowBook($event)"
+        (details)="displayBookDetails($event)"
+      ></app-book-card>
     </div>
 
-
-    <!-- Navegação de páginas -->
     <div class="btn-group flex justify-center mt-8">
-      <ul >
-
-      <li class="btn m-0.5 colors btn-sm">
-        <a
-        (click)="goToFirstPage()"
-        class="page-link"
-        href="javascript:void(0)"
-        aria-label="Previous"
-        [class.disabled]="page === 0"
-      >
-
-
-      <i class="fa-solid fa-angle-double-left"></i>
-
-      </a>
-    </li>
-       <li class="btn m-0.5 colors btn-sm">
-        <a
+      <ul>
+        <li class="btn m-0.5 colors btn-sm">
+          <a
+            (click)="goToFirstPage()"
+            class="page-link"
+            href="javascript:void(0)"
+            aria-label="Previous"
+            [class.disabled]="page === 0"
+          >
+            <i class="fa-solid fa-angle-double-left"></i>
+          </a>
+        </li>
+        <li class="btn m-0.5 colors btn-sm">
+          <a
             (click)="goToPreviousPage()"
             class="page-link"
             href="javascript:void(0)"
@@ -81,23 +76,23 @@
           >
             <i class="fa-solid fa-angle-left"></i>
           </a>
-      </li>
-      <li
-            *ngFor="let pageIndex of pages"
-            class="btn btn-sm m-0.5 btn-active"
+        </li>
+        <li
+          *ngFor="let pageIndex of pages"
+          class="btn btn-sm m-0.5 btn-active"
+          [class.active]="page === pageIndex"
+        >
+          <a
+            (click)="gotToPage(pageIndex)"
+            class="page-link"
             [class.active]="page === pageIndex"
+            href="javascript:void(0)"
+            >{{ pageIndex + 1 }}</a
           >
-            <a
-              (click)="gotToPage(pageIndex)"
-              class="page-link"
-              [class.active]="page === pageIndex"
-              href="javascript:void(0)"
-              >{{ pageIndex + 1 }}</a
-            >
-          </li>
+        </li>
 
-      <li class="btn m-0.5 colors btn-sm">
-        <a
+        <li class="btn m-0.5 colors btn-sm">
+          <a
             (click)="goToNextPage()"
             class="page-link"
             href="javascript:void(0)"
@@ -106,20 +101,19 @@
           >
             <i class="fa-solid fa-chevron-right"></i>
           </a>
-      </li>
-      <li class="btn m-0.5 colors btn-sm">
-        <a
-        (click)="goToLastPage()"
-        class="page-link"
-        href="javascript:void(0)"
-        aria-label="Next"
-        [class.disabled]="isLastPage"
-      >
-      <i class="fa-solid fa-angles-right"></i>
-      </a>
-
-      </li>
-    </ul>
+        </li>
+        <li class="btn m-0.5 colors btn-sm">
+          <a
+            (click)="goToLastPage()"
+            class="page-link"
+            href="javascript:void(0)"
+            aria-label="Next"
+            [class.disabled]="isLastPage"
+          >
+            <i class="fa-solid fa-angles-right"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

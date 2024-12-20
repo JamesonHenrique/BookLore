@@ -10,18 +10,23 @@ import { AuthenticationService } from '../../services/services';
 
 @Component({
   selector: 'app-register',
-  
+
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrl: './register.component.css',
 })
 export class RegisterComponent {
   constructor(
     private router: Router,
     private authService: AuthenticationService,
-    private tokenService:TokenService
+    private tokenService: TokenService
   ) {}
 
-  registerRequest: RegisterRequest  = {email: '', firstName: '', lastName: '', password: ''};
+  registerRequest: RegisterRequest = {
+    email: '',
+    firstName: '',
+    lastName: '',
+    password: '',
+  };
   errorMsg: Array<string> = [];
 
   register() {
@@ -32,15 +37,12 @@ export class RegisterComponent {
       })
       .subscribe({
         next: (response) => {
-
           this.tokenService.token = response.token as string;
           this.router.navigate(['activate-account']);
         },
         error: (error) => {
-
-         this.errorMsg = error.error.validationErrors;
-
-        }
+          this.errorMsg = error.error.validationErrors;
+        },
       });
   }
 }

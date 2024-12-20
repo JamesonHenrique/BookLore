@@ -1,9 +1,7 @@
-<div
-  class="background"
-  style="background-image: url('assets/a.png')"
->
+<div class="background" style="background-image: url('assets/a.png')">
   <div
-    class="min-h-screen bg-gradient-to-br flex items-center justify-center  " *ngIf="isOkay; else activationError"
+    class="min-h-screen bg-gradient-to-br flex items-center justify-center"
+    *ngIf="isOkay; else activationError"
   >
     <div
       class="card w-full bg-base-100 max-w-md shadow-xl"
@@ -13,8 +11,11 @@
         <h2 class="text-3xl font-bold text-green-500 text-center bg-a mb-3">
           Ativação Bem-Sucedida!
         </h2>
-        <p class="text-center mb-3">{{message}}.</p>
-        <button class="btn btn-neutral w-full colors" (click)="redirectToLogin()">
+        <p class="text-center mb-3">{{ message }}.</p>
+        <button
+          class="btn btn-neutral w-full colors"
+          (click)="redirectToLogin()"
+        >
           Ir para Login
         </button>
       </div>
@@ -22,48 +23,49 @@
   </div>
 
   <ng-template #activationError>
-
     <div
-    class="min-h-screen bg-gradient-to-br flex items-center justify-center p-4"
-  >
-    <div class="card w-full bg-base-100 max-w-md shadow-xl">
-      <div class="card-body">
-        <h2 class="text-3xl text-center font-bold text-red-600 mb-3">
-          Falha na Ativação!
-        </h2>
-        <p class="text-center mb-3">{{ message }}</p>
-        <button class="btn btn-neutral w-full colors" (click)="isOkay">
-          Tentar novamente
-        </button>
+      class="min-h-screen bg-gradient-to-br flex items-center justify-center p-4"
+    >
+      <div class="card w-full bg-base-100 max-w-md shadow-xl">
+        <div class="card-body">
+          <h2 class="text-3xl text-center font-bold text-red-600 mb-3">
+            Falha na Ativação!
+          </h2>
+          <p class="text-center mb-3">{{ message }}</p>
+          <button class="btn btn-neutral w-full colors" (click)="(isOkay)">
+            Tentar novamente
+          </button>
+        </div>
       </div>
     </div>
-  </div>
   </ng-template>
 
-
-
-<ng-template #codeForm>
-  <div
-    class="min-h-screen bg-gradient-to-br flex items-center justify-center p-4"
-  >
-    <div class="card w-full bg-base-100 max-w-md shadow-xl">
-      <div class="card-body">
-        <h2 class="text-3xl font-bold text-center mb-3 bg-a">Ative Sua Conta</h2>
-        <p class="text-center bg-a mb-3">
-          Digite o código de 6 dígitos enviado para seu e-mail
-        </p>
-        <code-input
-          class="mb-3"
-          [isCodeHidden]="false"
-          [codeLength]="6"
-          (codeCompleted)="onCodeCompleted($event)"
-        ></code-input>
-        <button (click)="redirectToLogin()" class="btn btn-neutral colors w-full">
-          Ativar Conta
-        </button>
+  <ng-template #codeForm>
+    <div
+      class="min-h-screen bg-gradient-to-br flex items-center justify-center p-4"
+    >
+      <div class="card w-full bg-base-100 max-w-md shadow-xl">
+        <div class="card-body">
+          <h2 class="text-3xl font-bold text-center mb-3 bg-a">
+            Ative Sua Conta
+          </h2>
+          <p class="text-center bg-a mb-3">
+            Digite o código de 6 dígitos enviado para seu e-mail
+          </p>
+          <code-input
+            class="mb-3"
+            [isCodeHidden]="false"
+            [codeLength]="6"
+            (codeCompleted)="onCodeCompleted($event)"
+          ></code-input>
+          <button
+            (click)="redirectToLogin()"
+            class="btn btn-neutral colors w-full"
+          >
+            Ativar Conta
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</ng-template>
+  </ng-template>
 </div>
-

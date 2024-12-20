@@ -1,23 +1,29 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { BookResponse, BorrowedBookResponse, FeedbackRequest, PageResponseBorrowedBookResponse } from '../../../../services/models';
+import {
+  BookResponse,
+  BorrowedBookResponse,
+  FeedbackRequest,
+  PageResponseBorrowedBookResponse,
+} from '../../../../services/models';
 import { BooksService, FeedbackService } from '../../../../services/services';
 
 @Component({
   selector: 'app-borrowed-book-list',
 
   templateUrl: './borrowed-book-list.component.html',
-  styleUrl: './borrowed-book-list.component.css'
+  styleUrl: './borrowed-book-list.component.css',
 })
 export class BorrowedBookListComponent {
-  constructor(private bookService:BooksService,
+  constructor(
+    private bookService: BooksService,
     private feedbackService: FeedbackService
-  ) { }
+  ) {}
   page = 0;
   size = 2;
   pages: any = [];
   borrowedBooks: PageResponseBorrowedBookResponse = {};
   selectedBook: BookResponse | undefined = undefined;
-  feedbackRequest: FeedbackRequest = {bookId: 0, comment: '', note: 0};
+  feedbackRequest: FeedbackRequest = { bookId: 0, comment: '', note: 0 };
 
   ngOnInit(): void {
     this.findAllBorrowedBooks();
@@ -28,42 +34,45 @@ export class BorrowedBookListComponent {
   }
 
   returnBook(withFeedback: boolean) {
-    this.bookService.returnBorrowBook({
-      'id': this.selectedBook?.id as number
-    }).subscribe({
-      next: () => {
-
-        if (withFeedback) {
-          this.giveFeedback();
-        }
-        this.selectedBook = undefined;
-        this.findAllBorrowedBooks();
-      }
-    });
+    this.bookService
+      .returnBorrowBook({
+        id: this.selectedBook?.id as number,
+      })
+      .subscribe({
+        next: () => {
+          if (withFeedback) {
+            this.giveFeedback();
+          }
+          this.selectedBook = undefined;
+          this.findAllBorrowedBooks();
+        },
+      });
   }
 
   private giveFeedback() {
-    this.feedbackService.saveFeedback({
-      body: this.feedbackRequest
-    }).subscribe({
-      next: () => {
-      }
-    });
+    this.feedbackService
+      .saveFeedback({
+        body: this.feedbackRequest,
+      })
+      .subscribe({
+        next: () => {},
+      });
   }
 
-
   private findAllBorrowedBooks() {
-    this.bookService.findAllBorrowedBooks({
-      page: this.page,
-      size: this.size
-    }).subscribe({
-      next: (resp) => {
-        this.borrowedBooks = resp;
-        this.pages = Array(this.borrowedBooks.totalPages)
-          .fill(0)
-          .map((x, i) => i);
-      }
-    });
+    this.bookService
+      .findAllBorrowedBooks({
+        page: this.page,
+        size: this.size,
+      })
+      .subscribe({
+        next: (resp) => {
+          this.borrowedBooks = resp;
+          this.pages = Array(this.borrowedBooks.totalPages)
+            .fill(0)
+            .map((x, i) => i);
+        },
+      });
   }
   gotToPage(page: number) {
     this.page = page;
@@ -76,18 +85,18 @@ export class BorrowedBookListComponent {
   }
 
   goToPreviousPage() {
-    if(this.page > 0){
+    if (this.page > 0) {
       this.page--;
     }
     this.findAllBorrowedBooks();
   }
 
   goToLastPage() {
-    this.page = this.borrowedBooks.totalPages as number - 1;
+    this.page = (this.borrowedBooks.totalPages as number) - 1;
     this.findAllBorrowedBooks();
   }
 
- goToNextPage() {
+  goToNextPage() {
     if (this.page < (this.borrowedBooks.totalPages ?? 0) - 1) {
       this.page++;
     }
@@ -95,7 +104,7 @@ export class BorrowedBookListComponent {
   }
 
   get isLastPage() {
-    return this.page === this.borrowedBooks.totalPages as number - 1;
+    return this.page === (this.borrowedBooks.totalPages as number) - 1;
   }
   @Input() rating: number = 0;
 

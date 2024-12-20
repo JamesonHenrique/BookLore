@@ -1,12 +1,11 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-rating',
   templateUrl: './rating.component.html',
-  styleUrls: ['./rating.component.css']
+  styleUrls: ['./rating.component.css'],
 })
 export class RatingComponent {
-
   @Input() rating: number = 0;
   @Input() customClass: string = 'flex justify-between text-xs px-2';
   @Output() ratingClicked: EventEmitter<number> = new EventEmitter<number>();
