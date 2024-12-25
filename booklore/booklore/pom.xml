@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.jhcs </groupId>
 	<artifactId>booklore</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>booklore</name>
 	<description>The BookLore, a book social network project</description>
 	<url/>

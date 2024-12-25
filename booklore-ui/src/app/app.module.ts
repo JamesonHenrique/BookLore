@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CodeInputModule } from 'angular-code-input';
@@ -32,6 +32,7 @@ import { HttpTokenInterceptor } from './services/interceptor/http-token.intercep
       useClass: HttpTokenInterceptor,
       multi: true
     },
+    provideClientHydration(),
 
 
   ],
