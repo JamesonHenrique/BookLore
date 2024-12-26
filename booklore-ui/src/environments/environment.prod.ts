@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://booklore.onrender.com/api/v1'
+  apiUrl: 'https://booklore-api-production.up.railway.app/api/v1'
 };

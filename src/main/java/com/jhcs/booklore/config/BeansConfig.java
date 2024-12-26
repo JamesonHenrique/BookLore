@@ -35,7 +35,7 @@ public class BeansConfig {
         final CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:4200");
-        config.addAllowedOrigin("https://booklore.onrender.com");
+        config.addAllowedOrigin("https://booklore-api-production.up.railway.app");
 
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
