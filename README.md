@@ -33,11 +33,7 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 #### Diagrama de segurança do Spring
 ![Diagrama de segurança](screenshots/security.png)
 
-#### Pipeline do backend
-![Pipeline do backend](screenshots/be-pipeline.png)
 
-#### Pipeline do frontend
-![Pipeline do frontend](screenshots/fe-pipeline.png)
 
 ## Tecnologias Utilizadas
 
