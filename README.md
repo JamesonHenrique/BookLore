@@ -77,7 +77,7 @@ Durante o desenvolvimento do projeto, aprendi como:
 - Documentar APIs utilizando OpenAPI e Swagger UI  
 - Implementar requisitos de negócio e gerenciar exceções de negócio  
 - Dockerizar a infraestrutura  
-- Configurar e utilizar pipelines de CI/CD e realizar deploys  
+
 
 ## Iniciando  
 
