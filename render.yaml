@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: booklore-api
+    env: docker
+    dockerfilePath: ./docker/backend/Dockerfile
+    dockerContext: .
+    plan: starter
+    envVars:
+      - key: DB_URL
+        value: jdbc:postgresql://postgres-sql-booklore:5432/booklore
+      - key: MAILDEV_URL
+        value: localhost
+      - key: ACTIVE_PROFILE
+        value: dev
+      - key: JAR_VERSION
+        value: 1.0.0
+    healthCheckPath: /
+    autoDeploy: true
+    runtime: docker
+
+  - type: web
+    name: booklore-ui
+    env: docker
+    dockerfilePath: ./docker/frontend/Dockerfile
+    dockerContext: .
+    plan: starter
+    envVars:
+      - key: API_URL
+        value: http://booklore-api:8088
+    healthCheckPath: /
+    autoDeploy: true
+    runtime: docker
+
+databases:
+  - name: booklore-db
+    databaseName: booklore
+    user: postgres
+    password: root
+    plan: starter
