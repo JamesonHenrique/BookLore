@@ -5,8 +5,8 @@
 - [Visão Geral](#visão-geral)
 - [Recursos](#recursos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-    - [Backend (book-social-network)](#backend-book-social-network)
-    - [Frontend (book-social-network-ui)](#frontend-book-social-network-ui)
+    - [Backend (book-social-network)](#Backend)
+    - [Frontend (book-social-network-ui)](#Frontend)
 - [Aprendizagem ](#Aprendizagem)
 - [Iniciando](#iniciando)
 
@@ -47,7 +47,7 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 - GitHub Actions
 - Keycloak
 
-### Frontend (bokelore-ui)
+### Frontend (booklore-ui)
 
 - Angular  
 - Arquitetura Baseada em Componentes  
