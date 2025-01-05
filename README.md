@@ -49,7 +49,7 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 - GitHub Actions
 - Keycloak
 
-### Frontend (borelore-ui)
+### Frontend (bokelore-ui)
 
 - Angular  
 - Arquitetura Baseada em Componentes  
