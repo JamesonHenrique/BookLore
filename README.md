@@ -44,8 +44,7 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 - Validação JSR-303 e do Spring
 - Documentação OpenAPI e Swagger UI
 - Docker
-- GitHub Actions
-- Keycloak
+
 
 ### Frontend (booklore-ui)
 
