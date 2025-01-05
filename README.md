@@ -5,8 +5,8 @@
 - [Visão Geral](#visão-geral)
 - [Recursos](#recursos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-    - [Backend (booklore](#Backend)
-    - [Frontend (booklore-ui)](#Frontend (booklore-ui))
+    - [Backend (booklore](#backend-booklore)
+    - [Frontend (booklore-ui)](#frontend-booklore-ui)
 - [Aprendizagem ](#Aprendizagem)
 - [Iniciando](#iniciando)
 
