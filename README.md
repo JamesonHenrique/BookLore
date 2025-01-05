@@ -7,11 +7,10 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
     - [Backend (book-social-network)](#backend-book-social-network)
     - [Frontend (book-social-network-ui)](#frontend-book-social-network-ui)
-- [Objetivos de Aprendizado](#objetivos-de-aprendizado)
-- [Licença](#licença)
+- [Aprendizagem ](#Aprendizagem)
+
 - [Iniciando](#iniciando)
-- [Colaboradores](#colaboradores)
-- [Agradecimentos](#agradecimentos)
+
 
 ## Visão Geral
 
