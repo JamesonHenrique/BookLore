@@ -80,5 +80,5 @@ Durante o desenvolvimento do projeto, aprendi como:
 
 Para começar a trabalhar no projeto BookLore, siga as instruções de configuração disponíveis nos diretórios correspondentes:  
 
-- [Instruções de Configuração do Backend](/book-network/README.md)  
-- [Instruções de Configuração do Frontend](book-network-ui/README.md)  
+- [Instruções de Configuração do Backend](README.md)  
+- [Instruções de Configuração do Frontend](booklore-ui/README.md)  
