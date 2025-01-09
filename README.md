@@ -5,13 +5,11 @@
 - [Visão Geral](#visão-geral)
 - [Recursos](#recursos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-    - [Backend (book-social-network)](#backend-book-social-network)
-    - [Frontend (book-social-network-ui)](#frontend-book-social-network-ui)
-- [Objetivos de Aprendizado](#objetivos-de-aprendizado)
-- [Licença](#licença)
+    - [Backend (booklore](#backend-booklore)
+    - [Frontend (booklore-ui)](#frontend-booklore-ui)
+- [Aprendizagem ](#Aprendizagem)
 - [Iniciando](#iniciando)
-- [Colaboradores](#colaboradores)
-- [Agradecimentos](#agradecimentos)
+
 
 ## Visão Geral
 
@@ -33,11 +31,7 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 #### Diagrama de segurança do Spring
 ![Diagrama de segurança](screenshots/security.png)
 
-#### Pipeline do backend
-![Pipeline do backend](screenshots/be-pipeline.png)
 
-#### Pipeline do frontend
-![Pipeline do frontend](screenshots/fe-pipeline.png)
 
 ## Tecnologias Utilizadas
 
@@ -50,10 +44,9 @@ BookLore é uma aplicação full-stack que permite aos usuários gerenciar suas 
 - Validação JSR-303 e do Spring
 - Documentação OpenAPI e Swagger UI
 - Docker
-- GitHub Actions
-- Keycloak
 
-### Frontend (borelore-ui)
+
+### Frontend (booklore-ui)
 
 - Angular  
 - Arquitetura Baseada em Componentes  
@@ -81,11 +74,11 @@ Durante o desenvolvimento do projeto, aprendi como:
 - Documentar APIs utilizando OpenAPI e Swagger UI  
 - Implementar requisitos de negócio e gerenciar exceções de negócio  
 - Dockerizar a infraestrutura  
-- Configurar e utilizar pipelines de CI/CD e realizar deploys  
+
 
 ## Iniciando  
 
 Para começar a trabalhar no projeto BookLore, siga as instruções de configuração disponíveis nos diretórios correspondentes:  
 
-- [Instruções de Configuração do Backend](/book-network/README.md)  
-- [Instruções de Configuração do Frontend](book-network-ui/README.md)  
+- [Instruções de Configuração do Backend](README.md)  
+- [Instruções de Configuração do Frontend](booklore-ui/README.md)  
