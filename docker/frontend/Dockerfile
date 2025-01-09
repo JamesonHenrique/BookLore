@@ -1,10 +1,13 @@
-FROM node:21 as build-stage
-
-WORKDIR /app
-
-COPY booklore-ui/package.json booklore-ui/package-lock.json ./
-RUN npm install -g @angular/cli
-RUN npm install
+FROM node:21 as builder
+WORKDIR app
 COPY . .
-EXPOSE 4200
-CMD ["ng", "serve", "--host","0.0.0.0"]
+RUN npm install
+
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=builder /app/dist/booklore-ui/browser /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY mime.types /etc/nginx/mime.types
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

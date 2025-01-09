@@ -22,13 +22,14 @@ services:
       - 1025:1025
   booklore-api:
     container_name: booklore-api
-    image: booklore/booklore:1.0.0
+    image: booklore/booklore-api:1.0.0
     ports:
       - 8088:8088
     networks:
       - spring-demo
     depends_on:
       - postgres
+
   booklore-ui:
     container_name: booklore-ui
     image: booklore/booklore-ui:1.0.0
